@@ -43,5 +43,5 @@ class MainImage extends React.Component {
     )
   }
 }
-
+//
 export default MainImage
