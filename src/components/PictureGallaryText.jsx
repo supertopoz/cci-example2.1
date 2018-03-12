@@ -95,6 +95,14 @@ const Paragraph = styled.p`
   line-height: 27px;
 `;
 
+const Title = styled.div`
+  grid-area: our-team-title;
+  font-family: 'Raleway', sans-serif;
+  color: #50C8EB;
+  font-weight: bold;
+  text-align:center;
+`;
+
 class PictureGallaryText extends React.Component {
   constructor(props){
     super();
@@ -117,7 +125,7 @@ class PictureGallaryText extends React.Component {
       <Paragraph className="caption">{this.props.data.caption}</Paragraph>        
     </Left>
     <Right>
-    <h1 style={{textAlign:'center'}}>{ this.props.data.title }</h1>  
+    <Title><h1 style={{textAlign:'center'}}>{ this.props.data.title }</h1></Title>
     <div>
       {this.props.data.paragraphs.map((text, index) => <Paragraph key={`${index}-text`} >{text}</Paragraph>)}    
     </div>

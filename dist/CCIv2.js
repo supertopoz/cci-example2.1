@@ -163,7 +163,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
-},{}],54:[function(require,module,exports) {
+},{}],64:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -181,7 +181,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],50:[function(require,module,exports) {
+},{}],61:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -218,7 +218,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],19:[function(require,module,exports) {
+},{}],20:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.production.min.js
  *
@@ -241,7 +241,7 @@ var U={Children:{map:function(a,b,e){if(null==a)return a;var c=[];T(a,c,null,b,e
 d=a.key,g=a.ref,k=a._owner;if(null!=b){void 0!==b.ref&&(g=b.ref,k=G.current);void 0!==b.key&&(d=""+b.key);if(a.type&&a.type.defaultProps)var f=a.type.defaultProps;for(h in b)H.call(b,h)&&!I.hasOwnProperty(h)&&(c[h]=void 0===b[h]&&void 0!==f?f[h]:b[h])}var h=arguments.length-2;if(1===h)c.children=e;else if(1<h){f=Array(h);for(var l=0;l<h;l++)f[l]=arguments[l+2];c.children=f}return{$$typeof:r,type:a.type,key:d,ref:g,props:c,_owner:k}},createFactory:function(a){var b=J.bind(null,a);b.type=a;return b},
 isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:G,assign:m}},V=Object.freeze({default:U}),W=V&&U||V;module.exports=W["default"]?W["default"]:W;
 
-},{"object-assign":43,"fbjs/lib/emptyObject":54,"fbjs/lib/emptyFunction":50}],66:[function(require,module,exports) {
+},{"object-assign":43,"fbjs/lib/emptyObject":64,"fbjs/lib/emptyFunction":61}],67:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -295,7 +295,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],67:[function(require,module,exports) {
+},{}],66:[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -358,7 +358,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = warning;
-},{"./emptyFunction":50}],65:[function(require,module,exports) {
+},{"./emptyFunction":61}],46:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -372,7 +372,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],64:[function(require,module,exports) {
+},{}],44:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -432,7 +432,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-},{"fbjs/lib/invariant":66,"fbjs/lib/warning":67,"./lib/ReactPropTypesSecret":65}],18:[function(require,module,exports) {
+},{"fbjs/lib/invariant":67,"fbjs/lib/warning":66,"./lib/ReactPropTypesSecret":46}],21:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.development.js
  *
@@ -1784,7 +1784,7 @@ if ('development' !== "production") {
     module.exports = react;
   })();
 }
-},{"object-assign":43,"fbjs/lib/emptyObject":54,"fbjs/lib/invariant":66,"fbjs/lib/warning":67,"fbjs/lib/emptyFunction":50,"prop-types/checkPropTypes":64}],8:[function(require,module,exports) {
+},{"object-assign":43,"fbjs/lib/emptyObject":64,"fbjs/lib/invariant":67,"fbjs/lib/warning":66,"fbjs/lib/emptyFunction":61,"prop-types/checkPropTypes":44}],11:[function(require,module,exports) {
 'use strict';
 
 if ('development' === 'production') {
@@ -1792,7 +1792,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":19,"./cjs/react.development.js":18}],47:[function(require,module,exports) {
+},{"./cjs/react.production.min.js":20,"./cjs/react.development.js":21}],58:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -1826,7 +1826,7 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-},{}],51:[function(require,module,exports) {
+},{}],60:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1901,7 +1901,7 @@ var EventListener = {
 };
 
 module.exports = EventListener;
-},{"./emptyFunction":50}],48:[function(require,module,exports) {
+},{"./emptyFunction":61}],62:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1938,7 +1938,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],49:[function(require,module,exports) {
+},{}],59:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2004,7 +2004,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],63:[function(require,module,exports) {
+},{}],73:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2027,7 +2027,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],60:[function(require,module,exports) {
+},{}],70:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2050,7 +2050,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":63}],52:[function(require,module,exports) {
+},{"./isNode":73}],63:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2088,7 +2088,7 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":60}],53:[function(require,module,exports) {
+},{"./isTextNode":70}],65:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2113,7 +2113,7 @@ function focusNode(node) {
 }
 
 module.exports = focusNode;
-},{}],17:[function(require,module,exports) {
+},{}],18:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.production.min.js
  *
@@ -2344,7 +2344,7 @@ var Sg={createPortal:Qg,findDOMNode:function(a){if(null==a)return null;if(1===a.
 E("40");return a._reactRootContainer?(Z.unbatchedUpdates(function(){Pg(null,null,a,!1,function(){a._reactRootContainer=null})}),!0):!1},unstable_createPortal:Qg,unstable_batchedUpdates:tc,unstable_deferredUpdates:Z.deferredUpdates,flushSync:Z.flushSync,__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{EventPluginHub:mb,EventPluginRegistry:Va,EventPropagators:Cb,ReactControlledComponent:qc,ReactDOMComponentTree:sb,ReactDOMEventListener:xd}};
 Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",rendererPackageName:"react-dom"});var Tg=Object.freeze({default:Sg}),Ug=Tg&&Sg||Tg;module.exports=Ug["default"]?Ug["default"]:Ug;
 
-},{"react":8,"fbjs/lib/ExecutionEnvironment":47,"object-assign":43,"fbjs/lib/emptyFunction":50,"fbjs/lib/EventListener":51,"fbjs/lib/getActiveElement":48,"fbjs/lib/shallowEqual":49,"fbjs/lib/containsNode":52,"fbjs/lib/focusNode":53,"fbjs/lib/emptyObject":54}],98:[function(require,module,exports) {
+},{"react":11,"fbjs/lib/ExecutionEnvironment":58,"object-assign":43,"fbjs/lib/emptyFunction":61,"fbjs/lib/EventListener":60,"fbjs/lib/getActiveElement":62,"fbjs/lib/shallowEqual":59,"fbjs/lib/containsNode":63,"fbjs/lib/focusNode":65,"fbjs/lib/emptyObject":64}],72:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2375,7 +2375,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],90:[function(require,module,exports) {
+},{}],68:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2412,7 +2412,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":98}],92:[function(require,module,exports) {
+},{"./hyphenate":72}],71:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -2442,7 +2442,7 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-},{}],91:[function(require,module,exports) {
+},{}],69:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2480,7 +2480,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":92}],20:[function(require,module,exports) {
+},{"./camelize":71}],19:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.development.js
  *
@@ -17838,7 +17838,7 @@ if ('development' !== "production") {
     module.exports = reactDom;
   })();
 }
-},{"react":8,"fbjs/lib/invariant":66,"fbjs/lib/warning":67,"fbjs/lib/ExecutionEnvironment":47,"object-assign":43,"fbjs/lib/emptyFunction":50,"fbjs/lib/EventListener":51,"fbjs/lib/getActiveElement":48,"fbjs/lib/shallowEqual":49,"fbjs/lib/containsNode":52,"fbjs/lib/focusNode":53,"fbjs/lib/emptyObject":54,"prop-types/checkPropTypes":64,"fbjs/lib/hyphenateStyleName":90,"fbjs/lib/camelizeStyleName":91}],9:[function(require,module,exports) {
+},{"react":11,"fbjs/lib/invariant":67,"fbjs/lib/warning":66,"fbjs/lib/ExecutionEnvironment":58,"object-assign":43,"fbjs/lib/emptyFunction":61,"fbjs/lib/EventListener":60,"fbjs/lib/getActiveElement":62,"fbjs/lib/shallowEqual":59,"fbjs/lib/containsNode":63,"fbjs/lib/focusNode":65,"fbjs/lib/emptyObject":64,"prop-types/checkPropTypes":44,"fbjs/lib/hyphenateStyleName":68,"fbjs/lib/camelizeStyleName":69}],9:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -17874,7 +17874,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.production.min.js":17,"./cjs/react-dom.development.js":20}],28:[function(require,module,exports) {
+},{"./cjs/react-dom.production.min.js":18,"./cjs/react-dom.development.js":19}],28:[function(require,module,exports) {
 "use strict";
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -17907,7 +17907,7 @@ function _interopDefault(e) {
   return e === t;
 },
     setConfig = function () {};exports.AppContainer = AppContainer, exports.hot = hot_prod, exports.areComponentsEqual = areComponentsEqual, exports.setConfig = setConfig;
-},{"react":8}],56:[function(require,module,exports) {
+},{"react":11}],53:[function(require,module,exports) {
 module.exports = function shallowEqual(objA, objB, compare, compareContext) {
 
     var ret = compare ? compare.call(compareContext, objA, objB) : void 0;
@@ -17959,7 +17959,7 @@ module.exports = function shallowEqual(objA, objB, compare, compareContext) {
 
 };
 
-},{}],55:[function(require,module,exports) {
+},{}],51:[function(require,module,exports) {
 (function() {
   'use strict';
   
@@ -18097,7 +18097,7 @@ module.exports = function shallowEqual(objA, objB, compare, compareContext) {
 }());
 
 
-},{}],61:[function(require,module,exports) {
+},{}],57:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -18614,7 +18614,7 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 
   return ReactPropTypes;
 };
-},{"fbjs/lib/emptyFunction":50,"fbjs/lib/invariant":66,"fbjs/lib/warning":67,"object-assign":43,"./lib/ReactPropTypesSecret":65,"./checkPropTypes":64}],62:[function(require,module,exports) {
+},{"fbjs/lib/emptyFunction":61,"fbjs/lib/invariant":67,"fbjs/lib/warning":66,"object-assign":43,"./lib/ReactPropTypesSecret":46,"./checkPropTypes":44}],56:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -18674,7 +18674,7 @@ module.exports = function() {
   return ReactPropTypes;
 };
 
-},{"fbjs/lib/emptyFunction":50,"fbjs/lib/invariant":66,"./lib/ReactPropTypesSecret":65}],58:[function(require,module,exports) {
+},{"fbjs/lib/emptyFunction":61,"fbjs/lib/invariant":67,"./lib/ReactPropTypesSecret":46}],50:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -18698,7 +18698,7 @@ if ('development' !== 'production') {
   // http://fb.me/prop-types-in-prod
   module.exports = require('./factoryWithThrowingShims')();
 }
-},{"./factoryWithTypeCheckers":61,"./factoryWithThrowingShims":62}],57:[function(require,module,exports) {
+},{"./factoryWithTypeCheckers":57,"./factoryWithThrowingShims":56}],52:[function(require,module,exports) {
 var global = (1,eval)("this");
 /**
  * Copyright 2015, Yahoo! Inc.
@@ -20213,7 +20213,7 @@ exports.enterModule = enter;
 exports.leaveModule = leave;
 exports.areComponentsEqual = areComponentsEqual;
 exports.setConfig = setConfig;
-},{"react":8,"shallowequal":56,"fast-levenshtein":55,"prop-types":58,"hoist-non-react-statics":57}],25:[function(require,module,exports) {
+},{"react":11,"shallowequal":53,"fast-levenshtein":51,"prop-types":50,"hoist-non-react-statics":52}],25:[function(require,module,exports) {
 'use strict';
 
 if (!module.hot || 'development' === 'production') {
@@ -20221,7 +20221,7 @@ if (!module.hot || 'development' === 'production') {
 } else {
   module.exports = require('./dist/react-hot-loader.development.js');
 }
-},{"./dist/react-hot-loader.production.min.js":28,"./dist/react-hot-loader.development.js":29}],75:[function(require,module,exports) {
+},{"./dist/react-hot-loader.production.min.js":28,"./dist/react-hot-loader.development.js":29}],55:[function(require,module,exports) {
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -20275,7 +20275,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = warning;
-},{}],59:[function(require,module,exports) {
+},{}],54:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -20322,7 +20322,7 @@ var invariant = function (condition, format, a, b, c, d, e, f) {
 };
 
 module.exports = invariant;
-},{}],88:[function(require,module,exports) {
+},{}],90:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -20398,7 +20398,7 @@ function resolvePathname(to) {
 }
 
 exports.default = resolvePathname;
-},{}],87:[function(require,module,exports) {
+},{}],91:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -20446,7 +20446,7 @@ function valueEqual(a, b) {
 }
 
 exports.default = valueEqual;
-},{}],77:[function(require,module,exports) {
+},{}],79:[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -20508,7 +20508,7 @@ var createPath = exports.createPath = function createPath(location) {
 
   return path;
 };
-},{}],101:[function(require,module,exports) {
+},{}],76:[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -20587,7 +20587,7 @@ var createLocation = exports.createLocation = function createLocation(path, stat
 var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a, b) {
   return a.pathname === b.pathname && a.search === b.search && a.hash === b.hash && a.key === b.key && (0, _valueEqual2.default)(a.state, b.state);
 };
-},{"resolve-pathname":88,"value-equal":87,"./PathUtils":77}],102:[function(require,module,exports) {
+},{"resolve-pathname":90,"value-equal":91,"./PathUtils":79}],78:[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -20673,7 +20673,7 @@ var createTransitionManager = function createTransitionManager() {
 };
 
 exports.default = createTransitionManager;
-},{"warning":75}],103:[function(require,module,exports) {
+},{"warning":55}],77:[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -20729,7 +20729,7 @@ var supportsGoWithoutReloadUsingHash = exports.supportsGoWithoutReloadUsingHash 
 var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
   return event.state === undefined && navigator.userAgent.indexOf('CriOS') === -1;
 };
-},{}],97:[function(require,module,exports) {
+},{}],75:[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -21037,7 +21037,7 @@ var createBrowserHistory = function createBrowserHistory() {
 };
 
 exports.default = createBrowserHistory;
-},{"warning":75,"invariant":59,"./LocationUtils":101,"./PathUtils":77,"./createTransitionManager":102,"./DOMUtils":103}],70:[function(require,module,exports) {
+},{"warning":55,"invariant":54,"./LocationUtils":76,"./PathUtils":79,"./createTransitionManager":78,"./DOMUtils":77}],81:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21180,7 +21180,7 @@ Router.childContextTypes = {
 };
 
 exports.default = Router;
-},{"warning":75,"invariant":59,"react":8,"prop-types":58}],38:[function(require,module,exports) {
+},{"warning":55,"invariant":54,"react":11,"prop-types":50}],38:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21194,7 +21194,7 @@ var _Router2 = _interopRequireDefault(_Router);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Router2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Router":70}],32:[function(require,module,exports) {
+},{"react-router/es/Router":81}],33:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21280,7 +21280,7 @@ BrowserRouter.propTypes = {
 };
 
 exports.default = BrowserRouter;
-},{"warning":75,"react":8,"prop-types":58,"history/createBrowserHistory":97,"./Router":38}],99:[function(require,module,exports) {
+},{"warning":55,"react":11,"prop-types":50,"history/createBrowserHistory":75,"./Router":38}],74:[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -21605,7 +21605,7 @@ var createHashHistory = function createHashHistory() {
 };
 
 exports.default = createHashHistory;
-},{"warning":75,"invariant":59,"./LocationUtils":101,"./PathUtils":77,"./createTransitionManager":102,"./DOMUtils":103}],34:[function(require,module,exports) {
+},{"warning":55,"invariant":54,"./LocationUtils":76,"./PathUtils":79,"./createTransitionManager":78,"./DOMUtils":77}],32:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21690,7 +21690,7 @@ HashRouter.propTypes = {
 };
 
 exports.default = HashRouter;
-},{"warning":75,"react":8,"prop-types":58,"history/createHashHistory":99,"./Router":38}],31:[function(require,module,exports) {
+},{"warning":55,"react":11,"prop-types":50,"history/createHashHistory":74,"./Router":38}],30:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21827,7 +21827,7 @@ Link.contextTypes = {
 };
 
 exports.default = Link;
-},{"react":8,"prop-types":58,"invariant":59}],106:[function(require,module,exports) {
+},{"react":11,"prop-types":50,"invariant":54}],101:[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -21998,7 +21998,7 @@ var createMemoryHistory = function createMemoryHistory() {
 };
 
 exports.default = createMemoryHistory;
-},{"warning":75,"./PathUtils":77,"./LocationUtils":101,"./createTransitionManager":102}],104:[function(require,module,exports) {
+},{"warning":55,"./PathUtils":79,"./LocationUtils":76,"./createTransitionManager":78}],82:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22084,7 +22084,7 @@ MemoryRouter.propTypes = {
 };
 
 exports.default = MemoryRouter;
-},{"warning":75,"react":8,"prop-types":58,"history/createMemoryHistory":106,"./Router":70}],30:[function(require,module,exports) {
+},{"warning":55,"react":11,"prop-types":50,"history/createMemoryHistory":101,"./Router":81}],31:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22098,12 +22098,12 @@ var _MemoryRouter2 = _interopRequireDefault(_MemoryRouter);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _MemoryRouter2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/MemoryRouter":104}],80:[function(require,module,exports) {
+},{"react-router/es/MemoryRouter":82}],102:[function(require,module,exports) {
 module.exports = Array.isArray || function (arr) {
   return Object.prototype.toString.call(arr) == '[object Array]';
 };
 
-},{}],78:[function(require,module,exports) {
+},{}],93:[function(require,module,exports) {
 var isarray = require('isarray')
 
 /**
@@ -22531,7 +22531,7 @@ function pathToRegexp (path, keys, options) {
   return stringToRegexp(/** @type {string} */ (path), /** @type {!Array} */ (keys), options)
 }
 
-},{"isarray":80}],72:[function(require,module,exports) {
+},{"isarray":102}],88:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22611,7 +22611,7 @@ var matchPath = function matchPath(pathname) {
 };
 
 exports.default = matchPath;
-},{"path-to-regexp":78}],79:[function(require,module,exports) {
+},{"path-to-regexp":93}],83:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22787,7 +22787,7 @@ Route.childContextTypes = {
 };
 
 exports.default = Route;
-},{"warning":75,"invariant":59,"react":8,"prop-types":58,"./matchPath":72}],36:[function(require,module,exports) {
+},{"warning":55,"invariant":54,"react":11,"prop-types":50,"./matchPath":88}],34:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22801,7 +22801,7 @@ var _Route2 = _interopRequireDefault(_Route);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Route2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Route":79}],33:[function(require,module,exports) {
+},{"react-router/es/Route":83}],35:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22906,7 +22906,7 @@ NavLink.defaultProps = {
 };
 
 exports.default = NavLink;
-},{"react":8,"prop-types":58,"./Route":36,"./Link":31}],68:[function(require,module,exports) {
+},{"react":11,"prop-types":50,"./Route":34,"./Link":30}],85:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23013,7 +23013,7 @@ Prompt.contextTypes = {
 };
 
 exports.default = Prompt;
-},{"react":8,"prop-types":58,"invariant":59}],35:[function(require,module,exports) {
+},{"react":11,"prop-types":50,"invariant":54}],37:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -23027,7 +23027,7 @@ var _Prompt2 = _interopRequireDefault(_Prompt);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Prompt2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Prompt":68}],85:[function(require,module,exports) {
+},{"react-router/es/Prompt":85}],97:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -23090,7 +23090,7 @@ var createPath = exports.createPath = function createPath(location) {
 
   return path;
 };
-},{}],82:[function(require,module,exports) {
+},{}],98:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -23179,7 +23179,7 @@ var createLocation = exports.createLocation = function createLocation(path, stat
 var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a, b) {
   return a.pathname === b.pathname && a.search === b.search && a.hash === b.hash && a.key === b.key && (0, _valueEqual2.default)(a.state, b.state);
 };
-},{"resolve-pathname":88,"value-equal":87,"./PathUtils":85}],86:[function(require,module,exports) {
+},{"resolve-pathname":90,"value-equal":91,"./PathUtils":97}],99:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -23267,7 +23267,7 @@ var createTransitionManager = function createTransitionManager() {
 };
 
 exports.default = createTransitionManager;
-},{"warning":75}],89:[function(require,module,exports) {
+},{"warning":55}],100:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -23325,7 +23325,7 @@ var supportsGoWithoutReloadUsingHash = exports.supportsGoWithoutReloadUsingHash 
 var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
   return event.state === undefined && navigator.userAgent.indexOf('CriOS') === -1;
 };
-},{}],84:[function(require,module,exports) {
+},{}],96:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23644,7 +23644,7 @@ var createBrowserHistory = function createBrowserHistory() {
 };
 
 exports.default = createBrowserHistory;
-},{"warning":75,"invariant":59,"./LocationUtils":82,"./PathUtils":85,"./createTransitionManager":86,"./DOMUtils":89}],83:[function(require,module,exports) {
+},{"warning":55,"invariant":54,"./LocationUtils":98,"./PathUtils":97,"./createTransitionManager":99,"./DOMUtils":100}],95:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -23978,7 +23978,7 @@ var createHashHistory = function createHashHistory() {
 };
 
 exports.default = createHashHistory;
-},{"warning":75,"invariant":59,"./LocationUtils":82,"./PathUtils":85,"./createTransitionManager":86,"./DOMUtils":89}],81:[function(require,module,exports) {
+},{"warning":55,"invariant":54,"./LocationUtils":98,"./PathUtils":97,"./createTransitionManager":99,"./DOMUtils":100}],94:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24162,7 +24162,7 @@ var createMemoryHistory = function createMemoryHistory() {
 };
 
 exports.default = createMemoryHistory;
-},{"warning":75,"./PathUtils":85,"./LocationUtils":82,"./createTransitionManager":86}],76:[function(require,module,exports) {
+},{"warning":55,"./PathUtils":97,"./LocationUtils":98,"./createTransitionManager":99}],92:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24217,7 +24217,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.createBrowserHistory = _createBrowserHistory3.default;
 exports.createHashHistory = _createHashHistory3.default;
 exports.createMemoryHistory = _createMemoryHistory3.default;
-},{"./createBrowserHistory":84,"./createHashHistory":83,"./createMemoryHistory":81,"./LocationUtils":82,"./PathUtils":85}],69:[function(require,module,exports) {
+},{"./createBrowserHistory":96,"./createHashHistory":95,"./createMemoryHistory":94,"./LocationUtils":98,"./PathUtils":97}],84:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24341,7 +24341,7 @@ Redirect.contextTypes = {
 };
 
 exports.default = Redirect;
-},{"react":8,"prop-types":58,"warning":75,"invariant":59,"history":76}],37:[function(require,module,exports) {
+},{"react":11,"prop-types":50,"warning":55,"invariant":54,"history":92}],36:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24355,7 +24355,7 @@ var _Redirect2 = _interopRequireDefault(_Redirect);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Redirect2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Redirect":69}],71:[function(require,module,exports) {
+},{"react-router/es/Redirect":84}],89:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24567,7 +24567,7 @@ StaticRouter.childContextTypes = {
 };
 
 exports.default = StaticRouter;
-},{"warning":75,"invariant":59,"react":8,"prop-types":58,"history/PathUtils":77,"./Router":70}],39:[function(require,module,exports) {
+},{"warning":55,"invariant":54,"react":11,"prop-types":50,"history/PathUtils":79,"./Router":81}],41:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24581,7 +24581,7 @@ var _StaticRouter2 = _interopRequireDefault(_StaticRouter);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _StaticRouter2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/StaticRouter":71}],74:[function(require,module,exports) {
+},{"react-router/es/StaticRouter":89}],86:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24694,7 +24694,7 @@ Switch.propTypes = {
 };
 
 exports.default = Switch;
-},{"react":8,"prop-types":58,"warning":75,"invariant":59,"./matchPath":72}],42:[function(require,module,exports) {
+},{"react":11,"prop-types":50,"warning":55,"invariant":54,"./matchPath":88}],39:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24708,7 +24708,7 @@ var _Switch2 = _interopRequireDefault(_Switch);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Switch2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Switch":74}],40:[function(require,module,exports) {
+},{"react-router/es/Switch":86}],40:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24722,7 +24722,7 @@ var _matchPath2 = _interopRequireDefault(_matchPath);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _matchPath2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/matchPath":72}],73:[function(require,module,exports) {
+},{"react-router/es/matchPath":88}],87:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24786,7 +24786,7 @@ var withRouter = function withRouter(Component) {
 };
 
 exports.default = withRouter;
-},{"react":8,"prop-types":58,"hoist-non-react-statics":57,"./Route":79}],41:[function(require,module,exports) {
+},{"react":11,"prop-types":50,"hoist-non-react-statics":52,"./Route":83}],42:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24800,7 +24800,7 @@ var _withRouter2 = _interopRequireDefault(_withRouter);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _withRouter2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/withRouter":73}],27:[function(require,module,exports) {
+},{"react-router/es/withRouter":87}],26:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24875,7 +24875,7 @@ exports.StaticRouter = _StaticRouter3.default;
 exports.Switch = _Switch3.default;
 exports.matchPath = _matchPath3.default;
 exports.withRouter = _withRouter3.default;
-},{"./BrowserRouter":32,"./HashRouter":34,"./Link":31,"./MemoryRouter":30,"./NavLink":33,"./Prompt":35,"./Redirect":37,"./Route":36,"./Router":38,"./StaticRouter":39,"./Switch":42,"./matchPath":40,"./withRouter":41}],12:[function(require,module,exports) {
+},{"./BrowserRouter":33,"./HashRouter":32,"./Link":30,"./MemoryRouter":31,"./NavLink":35,"./Prompt":37,"./Redirect":36,"./Route":34,"./Router":38,"./StaticRouter":41,"./Switch":39,"./matchPath":40,"./withRouter":42}],5:[function(require,module,exports) {
 (function () {
   var enterModule = require('react-hot-loader').enterModule;
 
@@ -24884,9 +24884,9 @@ exports.withRouter = _withRouter3.default;
 
 var images = {
 
-  "class-individual": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-individual.jpg?alt=media",
-  "class-life": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-life.jpg?alt=media",
-  "class-work": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-work.jpg?alt=media",
+  "classIndividual": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-individual.jpg?alt=media",
+  "classLife": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-life.jpg?alt=media",
+  "classWork": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-work.jpg?alt=media",
   "contactusbanner": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/contactusbanner.jpg?alt=media",
   "englishClassesCorporate1": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesCorporate1.jpg?alt=media",
   "englishClassesCorporate2": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesCorporate2.jpg?alt=media",
@@ -24933,10 +24933,10 @@ var images = {
   "cambridgeLogo": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/cambridgeLogo.png?alt=media",
   "cambridgeUni": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/cambridgeUni.png?alt=media",
   "ccilogo": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/ccilogo.png?alt=media",
-  "class-abroad": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-abroad.jpg?alt=media",
-  "class-corporate": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-corporate.jpg?alt=media",
-  "class-exams": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-exams.jpg?alt=media",
-  "class-home": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-home.jpg?alt=media"
+  "classAbroad": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-abroad.jpg?alt=media",
+  "classCorporate": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-corporate.jpg?alt=media",
+  "classExams": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-exams.jpg?alt=media",
+  "classHome": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-home.jpg?alt=media"
 
 };
 
@@ -24957,7 +24957,7 @@ module.exports = images;
 })();
 
 ;
-},{"react-hot-loader":25}],105:[function(require,module,exports) {
+},{"react-hot-loader":25}],80:[function(require,module,exports) {
 /*!
  * isobject <https://github.com/jonschlinkert/isobject>
  *
@@ -24971,7 +24971,7 @@ module.exports = function isObject(val) {
   return val != null && typeof val === 'object' && Array.isArray(val) === false;
 };
 
-},{}],96:[function(require,module,exports) {
+},{}],49:[function(require,module,exports) {
 /*!
  * is-plain-object <https://github.com/jonschlinkert/is-plain-object>
  *
@@ -25010,7 +25010,7 @@ module.exports = function isPlainObject(o) {
   return true;
 };
 
-},{"isobject":105}],94:[function(require,module,exports) {
+},{"isobject":80}],48:[function(require,module,exports) {
 /*
  *          __        ___
  *    _____/ /___  __/ (_)____
@@ -26636,7 +26636,7 @@ module.exports = function isPlainObject(o) {
 	return stylis
 }));
 
-},{}],95:[function(require,module,exports) {
+},{}],47:[function(require,module,exports) {
 (function (factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? (module['exports'] = factory()) :
 		typeof define === 'function' && define['amd'] ? define(factory()) :
@@ -26686,7 +26686,7 @@ module.exports = function isPlainObject(o) {
 	}
 }))
 
-},{}],93:[function(require,module,exports) {
+},{}],45:[function(require,module,exports) {
 /**
  * Copyright 2015, Yahoo! Inc.
  * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
@@ -26738,7 +26738,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
     return targetComponent;
 };
 
-},{}],26:[function(require,module,exports) {
+},{}],27:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -28950,7 +28950,7 @@ exports.StyleSheetManager = StyleSheetManager;
 exports.__DO_NOT_USE_OR_YOU_WILL_BE_HAUNTED_BY_SPOOKY_GHOSTS = __DO_NOT_USE_OR_YOU_WILL_BE_HAUNTED_BY_SPOOKY_GHOSTS;
 exports.default = styled;
 //# sourceMappingURL=styled-components.browser.es.js.map
-},{"is-plain-object":96,"stylis":94,"stylis-rule-sheet":95,"react":8,"prop-types":58,"hoist-non-react-statics":93}],21:[function(require,module,exports) {
+},{"is-plain-object":49,"stylis":48,"stylis-rule-sheet":47,"react":11,"prop-types":50,"hoist-non-react-statics":45}],13:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -28966,7 +28966,8 @@ var _templateObject = _taggedTemplateLiteral(['', ''], ['', '']),
     _templateObject5 = _taggedTemplateLiteral(['\n  background: #a2c534;\n  padding: 10px;\n  text-align: center;\n  width:50%;\n  margin: 0 auto;\n  box-shadow: 1px 1px 1px #999;\n  &:hover {\n  color:white;\n  background: #b7d753;\n  cursor: pointer;\n}\n'], ['\n  background: #a2c534;\n  padding: 10px;\n  text-align: center;\n  width:50%;\n  margin: 0 auto;\n  box-shadow: 1px 1px 1px #999;\n  &:hover {\n  color:white;\n  background: #b7d753;\n  cursor: pointer;\n}\n']),
     _templateObject6 = _taggedTemplateLiteral(['\n   justify-self: center;\n   @media (max-width: 599px) {\n    width: 95px;\n   }\n   @media (min-width: 600px) {\n    width: 120px;\n   }\n   @media (min-width: 900px) {\n    width: 140px;\n   }\n   @media (min-width: 1200px) {}\n   @media (min-width: 1800px) {}\n   width: 150px;\n'], ['\n   justify-self: center;\n   @media (max-width: 599px) {\n    width: 95px;\n   }\n   @media (min-width: 600px) {\n    width: 120px;\n   }\n   @media (min-width: 900px) {\n    width: 140px;\n   }\n   @media (min-width: 1200px) {}\n   @media (min-width: 1800px) {}\n   width: 150px;\n']),
     _templateObject7 = _taggedTemplateLiteral(['\n  font-family: \'Rubik\', sans-serif;\n  color: #717070;\n  font-weight: lighter !important;\n  letter-spacing: 1px;\n  line-height: 27px;\n'], ['\n  font-family: \'Rubik\', sans-serif;\n  color: #717070;\n  font-weight: lighter !important;\n  letter-spacing: 1px;\n  line-height: 27px;\n']),
-    _templateObject8 = _taggedTemplateLiteral(['', ' background: ', ';'], ['', ' background: ', ';']);
+    _templateObject8 = _taggedTemplateLiteral(['\n  grid-area: our-team-title;\n  font-family: \'Raleway\', sans-serif;\n  color: #50C8EB;\n  font-weight: bold;\n  text-align:center;\n'], ['\n  grid-area: our-team-title;\n  font-family: \'Raleway\', sans-serif;\n  color: #50C8EB;\n  font-weight: bold;\n  text-align:center;\n']),
+    _templateObject9 = _taggedTemplateLiteral(['', ' background: ', ';'], ['', ' background: ', ';']);
 
 var _react = require('react');
 
@@ -29008,6 +29009,8 @@ var PartyPics = (0, _styledComponents2.default)('img')(_templateObject6);
 
 var Paragraph = _styledComponents2.default.p(_templateObject7);
 
+var Title = _styledComponents2.default.div(_templateObject8);
+
 var PictureGallaryText = function (_React$Component) {
   _inherits(PictureGallaryText, _React$Component);
 
@@ -29023,7 +29026,7 @@ var PictureGallaryText = function (_React$Component) {
   _createClass(PictureGallaryText, [{
     key: 'componentWillMount',
     value: function componentWillMount() {
-      Wrapper = _styledComponents2.default.div(_templateObject8, wrapperStyle, this.props.data.background);
+      Wrapper = _styledComponents2.default.div(_templateObject9, wrapperStyle, this.props.data.background);
     }
   }, {
     key: 'render',
@@ -29052,9 +29055,13 @@ var PictureGallaryText = function (_React$Component) {
           Right,
           null,
           _react2.default.createElement(
-            'h1',
-            { style: { textAlign: 'center' } },
-            this.props.data.title
+            Title,
+            null,
+            _react2.default.createElement(
+              'h1',
+              { style: { textAlign: 'center' } },
+              this.props.data.title
+            )
           ),
           _react2.default.createElement(
             'div',
@@ -29106,13 +29113,14 @@ exports.default = _default;
   reactHotLoader.register(Btn, 'Btn', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureGallaryText.jsx');
   reactHotLoader.register(PartyPics, 'PartyPics', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureGallaryText.jsx');
   reactHotLoader.register(Paragraph, 'Paragraph', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureGallaryText.jsx');
+  reactHotLoader.register(Title, 'Title', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureGallaryText.jsx');
   reactHotLoader.register(PictureGallaryText, 'PictureGallaryText', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureGallaryText.jsx');
   reactHotLoader.register(_default, 'default', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureGallaryText.jsx');
   leaveModule(module);
 })();
 
 ;
-},{"react-hot-loader":25,"react":8,"styled-components":26}],46:[function(require,module,exports) {
+},{"react-hot-loader":25,"react":11,"styled-components":27}],24:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -29218,7 +29226,7 @@ exports.default = _default;
 })();
 
 ;
-},{"react-hot-loader":25,"react":8,"styled-components":26}],45:[function(require,module,exports) {
+},{"react-hot-loader":25,"react":11,"styled-components":27}],23:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -29368,7 +29376,7 @@ exports.default = _default;
 })();
 
 ;
-},{"react-hot-loader":25,"react":8,"styled-components":26,"./images.js":12,"./GreenButton.jsx":46}],22:[function(require,module,exports) {
+},{"react-hot-loader":25,"react":11,"styled-components":27,"./images.js":5,"./GreenButton.jsx":24}],15:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -29438,7 +29446,7 @@ exports.default = _default;
 })();
 
 ;
-},{"react-hot-loader":25,"react":8,"styled-components":26,"./PictureText.jsx":45,"./images.js":12}],23:[function(require,module,exports) {
+},{"react-hot-loader":25,"react":11,"styled-components":27,"./PictureText.jsx":23,"./images.js":5}],14:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -29632,7 +29640,7 @@ exports.default = _default;
 })();
 
 ;
-},{"react-hot-loader":25,"react":8,"styled-components":26,"./images":12}],24:[function(require,module,exports) {
+},{"react-hot-loader":25,"react":11,"styled-components":27,"./images":5}],16:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -29791,7 +29799,7 @@ exports.default = _default;
 })();
 
 ;
-},{"react-hot-loader":25,"react":8,"styled-components":26,"./images":12}],13:[function(require,module,exports) {
+},{"react-hot-loader":25,"react":11,"styled-components":27,"./images":5}],4:[function(require,module,exports) {
 'use strict';
 
 var _react = require('react');
@@ -29875,7 +29883,1248 @@ module.exports = Home;
 })();
 
 ;
-},{"react-hot-loader":25,"react":8,"styled-components":26,"./PictureGallaryText.jsx":21,"./CambridgeGaurantee.jsx":22,"./QualityAndComfort.jsx":23,"./images.js":12,"./OurTeam.jsx":24}],100:[function(require,module,exports) {
+},{"react-hot-loader":25,"react":11,"styled-components":27,"./PictureGallaryText.jsx":13,"./CambridgeGaurantee.jsx":15,"./QualityAndComfort.jsx":14,"./images.js":5,"./OurTeam.jsx":16}],17:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _templateObject = _taggedTemplateLiteral(['\n  display: grid;\n  margin-top: 2px;\n'], ['\n  display: grid;\n  margin-top: 2px;\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  width: 100%;\n'], ['\n  width: 100%;\n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n  margin-top: -15px;\n\n  @media (max-width: 599px) {\n    font-size: 20px;\n    margin-top: 0px;\n    }\n'], ['\n  margin-top: -15px;\n\n  @media (max-width: 599px) {\n    font-size: 20px;\n    margin-top: 0px;\n    }\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n    background: rgba(255,255,255, 0.8);\n    margin-top:-65px;\n    text-align: center;\n    padding:20px;\n'], ['\n    background: rgba(255,255,255, 0.8);\n    margin-top:-65px;\n    text-align: center;\n    padding:20px;\n']);
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _styledComponents = require('styled-components');
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(function () {
+  var enterModule = require('react-hot-loader').enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Wrapper = _styledComponents2.default.div(_templateObject);
+
+var MainImageHolder = (0, _styledComponents2.default)('img')(_templateObject2);
+
+var Heading = (0, _styledComponents2.default)('h1')(_templateObject3);
+
+var HeadingBanner = _styledComponents2.default.div(_templateObject4);
+
+var MainImage = function (_React$Component) {
+  _inherits(MainImage, _React$Component);
+
+  function MainImage(props) {
+    _classCallCheck(this, MainImage);
+
+    return _possibleConstructorReturn(this, (MainImage.__proto__ || Object.getPrototypeOf(MainImage)).call(this, props));
+  }
+
+  _createClass(MainImage, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        Wrapper,
+        null,
+        _react2.default.createElement(MainImageHolder, { src: this.props.image, alt: 'main image' }),
+        _react2.default.createElement(
+          HeadingBanner,
+          null,
+          _react2.default.createElement(
+            Heading,
+            null,
+            ' ',
+            this.props.text
+          )
+        )
+      );
+    }
+  }, {
+    key: '__reactstandin__regenerateByEval',
+    value: function __reactstandin__regenerateByEval(key, code) {
+      this[key] = eval(code);
+    }
+  }]);
+
+  return MainImage;
+}(_react2.default.Component);
+
+var _default = MainImage;
+exports.default = _default;
+;
+
+(function () {
+  var reactHotLoader = require('react-hot-loader').default;
+
+  var leaveModule = require('react-hot-loader').leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(Wrapper, 'Wrapper', 'C:/Users/Jason/Desktop/CCIv2/src/components/MainImage.jsx');
+  reactHotLoader.register(MainImageHolder, 'MainImageHolder', 'C:/Users/Jason/Desktop/CCIv2/src/components/MainImage.jsx');
+  reactHotLoader.register(Heading, 'Heading', 'C:/Users/Jason/Desktop/CCIv2/src/components/MainImage.jsx');
+  reactHotLoader.register(HeadingBanner, 'HeadingBanner', 'C:/Users/Jason/Desktop/CCIv2/src/components/MainImage.jsx');
+  reactHotLoader.register(MainImage, 'MainImage', 'C:/Users/Jason/Desktop/CCIv2/src/components/MainImage.jsx');
+  reactHotLoader.register(_default, 'default', 'C:/Users/Jason/Desktop/CCIv2/src/components/MainImage.jsx');
+  leaveModule(module);
+})();
+
+;
+},{"react-hot-loader":25,"react":11,"styled-components":27}],6:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _templateObject = _taggedTemplateLiteral(['', ''], ['', '']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  display: grid;\n  grid-gap: 10px;\n  align-content: center;\n  justify-self: center;\n'], ['\n  display: grid;\n  grid-gap: 10px;\n  align-content: center;\n  justify-self: center;\n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n  width: 20rem;\n  height: 2rem;\n  padding-left:5px;\n  border: 1px solid #50C8EB;\n  border-radius: 2px;\n'], ['\n  width: 20rem;\n  height: 2rem;\n  padding-left:5px;\n  border: 1px solid #50C8EB;\n  border-radius: 2px;\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n  padding: 20px;\n  grid-auto-columns: auto;\n  grid-area: cam-left;\n\n'], ['\n  padding: 20px;\n  grid-auto-columns: auto;\n  grid-area: cam-left;\n\n']),
+    _templateObject5 = _taggedTemplateLiteral(['\n  width: 100%;\n'], ['\n  width: 100%;\n']),
+    _templateObject6 = _taggedTemplateLiteral(['\n  font-family: \'Rubik\', sans-serif;\n  color: #717070;\n  font-weight: lighter !important;\n  letter-spacing: 1px;\n  line-height: 27px;\n'], ['\n  font-family: \'Rubik\', sans-serif;\n  color: #717070;\n  font-weight: lighter !important;\n  letter-spacing: 1px;\n  line-height: 27px;\n']);
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _styledComponents = require('styled-components');
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _MainImage = require('./MainImage.jsx');
+
+var _MainImage2 = _interopRequireDefault(_MainImage);
+
+var _images = require('./images.js');
+
+var _images2 = _interopRequireDefault(_images);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(function () {
+  var enterModule = require('react-hot-loader').enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var picture = _images2.default.contactusbanner;
+
+var wrapperStyle = '\n@media (max-width: 599px) {\n    display: grid;\n    grid-gap: 5px;\n    grid-template-areas: \n      "cam-left"\n      "cam-right"       \n}\n/*for-tablet-portrait-up*/\n\n@media (min-width: 600px) {\n    align-content: space-between;\n  justify-content: space-around;\n    display: grid;\n    grid-gap: 2px;\n    grid-template-areas: \n      "cam-left" \n      "cam-right"\n}\n/*for-tablet-landscape-up*/\n\n@media (min-width: 900px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-columns: 50% 50%;\n}\n/*for-desktop-up*/\n\n@media (min-width: 1200px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-areas: \n      "cam-left cam-right"\n}\n/*for-big-desktop-up*/\n\n@media (min-width: 1800px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-areas: \n      "cam-left cam-right"\n}\n  margin-top: 10px;\n  padding: 20px;\n';
+
+var Wrapper = _styledComponents2.default.div(_templateObject, wrapperStyle);
+
+var ContactFormBlock = _styledComponents2.default.div(_templateObject2);
+
+var InputItem = (0, _styledComponents2.default)('input')(_templateObject3);
+
+var TextBlock = _styledComponents2.default.div(_templateObject4);
+
+var Pic = (0, _styledComponents2.default)('img')(_templateObject5);
+
+var Paragraph = _styledComponents2.default.p(_templateObject6);
+
+var Contact = function (_React$Component) {
+  _inherits(Contact, _React$Component);
+
+  function Contact(props) {
+    _classCallCheck(this, Contact);
+
+    return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).call(this, props));
+  }
+
+  _createClass(Contact, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(_MainImage2.default, { text: 'Contact CCI English', image: picture }),
+        _react2.default.createElement(
+          Wrapper,
+          null,
+          _react2.default.createElement(
+            TextBlock,
+            null,
+            _react2.default.createElement(
+              'h1',
+              { style: { textAlign: 'center' } },
+              'Send us a message'
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                Paragraph,
+                null,
+                'Contact us with your questions about English classes. Everyone who works at our school is knowledgable about English, teaching and traveling.'
+              ),
+              _react2.default.createElement(
+                Paragraph,
+                null,
+                'Our staff is happy to provide information via email, on the phone, over Skype or in person at our school. '
+              ),
+              _react2.default.createElement(
+                Paragraph,
+                null,
+                'CCI English:'
+              ),
+              _react2.default.createElement(
+                'ul',
+                null,
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  _react2.default.createElement(
+                    Paragraph,
+                    null,
+                    'Provides free level testing and consultations for students'
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  _react2.default.createElement(
+                    Paragraph,
+                    null,
+                    'Can speak to you in English, Hebrew, Russian, Ukrainian, French or Spanish'
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  _react2.default.createElement(
+                    Paragraph,
+                    null,
+                    'Has education experts that can help you decide on the best course option'
+                  )
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            ContactFormBlock,
+            null,
+            _react2.default.createElement(
+              'label',
+              null,
+              'First Name:',
+              _react2.default.createElement(
+                'span',
+                { style: { color: 'red' } },
+                '*'
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(InputItem, { type: 'text', name: 'name', required: true })
+            ),
+            _react2.default.createElement(
+              'label',
+              null,
+              'Last Name ',
+              _react2.default.createElement(
+                'span',
+                { style: { color: 'red' } },
+                '*'
+              ),
+              ':',
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(InputItem, { type: 'text', name: 'name' })
+            ),
+            _react2.default.createElement(
+              'label',
+              null,
+              'Email',
+              _react2.default.createElement(
+                'span',
+                { style: { color: 'red' } },
+                '*'
+              ),
+              ':',
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(InputItem, { type: 'text', name: 'name' })
+            ),
+            _react2.default.createElement(
+              'label',
+              null,
+              'Phone Number',
+              _react2.default.createElement(
+                'span',
+                { style: { color: 'red' } },
+                '*'
+              ),
+              ':',
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(InputItem, { type: 'text', name: 'name' })
+            ),
+            _react2.default.createElement(
+              'label',
+              null,
+              'Message',
+              _react2.default.createElement(
+                'span',
+                { style: { color: 'red' } },
+                '*'
+              ),
+              ':',
+              _react2.default.createElement('br', null),
+              _react2.default.createElement('textarea', { type: 'text', name: 'name' })
+            ),
+            _react2.default.createElement(InputItem, { type: 'submit', value: 'Submit' })
+          )
+        ),
+        _react2.default.createElement(
+          TextBlock,
+          null,
+          _react2.default.createElement(
+            'h1',
+            { style: { textAlign: 'center' } },
+            'Call us'
+          ),
+          _react2.default.createElement(
+            Paragraph,
+            null,
+            'In Israel: 073-769-4499'
+          ),
+          _react2.default.createElement(
+            Paragraph,
+            null,
+            'Outside of Israel: +972 73-769-4499'
+          )
+        ),
+        _react2.default.createElement(
+          TextBlock,
+          null,
+          _react2.default.createElement(
+            'h1',
+            { style: { textAlign: 'center' } },
+            'Visit our school'
+          ),
+          _react2.default.createElement(
+            Paragraph,
+            null,
+            'Visit our school'
+          )
+        )
+      );
+    }
+  }, {
+    key: '__reactstandin__regenerateByEval',
+    value: function __reactstandin__regenerateByEval(key, code) {
+      this[key] = eval(code);
+    }
+  }]);
+
+  return Contact;
+}(_react2.default.Component);
+
+var _default = Contact;
+exports.default = _default;
+;
+
+(function () {
+  var reactHotLoader = require('react-hot-loader').default;
+
+  var leaveModule = require('react-hot-loader').leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(picture, 'picture', 'C:/Users/Jason/Desktop/CCIv2/src/components/Contact.jsx');
+  reactHotLoader.register(wrapperStyle, 'wrapperStyle', 'C:/Users/Jason/Desktop/CCIv2/src/components/Contact.jsx');
+  reactHotLoader.register(Wrapper, 'Wrapper', 'C:/Users/Jason/Desktop/CCIv2/src/components/Contact.jsx');
+  reactHotLoader.register(ContactFormBlock, 'ContactFormBlock', 'C:/Users/Jason/Desktop/CCIv2/src/components/Contact.jsx');
+  reactHotLoader.register(InputItem, 'InputItem', 'C:/Users/Jason/Desktop/CCIv2/src/components/Contact.jsx');
+  reactHotLoader.register(TextBlock, 'TextBlock', 'C:/Users/Jason/Desktop/CCIv2/src/components/Contact.jsx');
+  reactHotLoader.register(Pic, 'Pic', 'C:/Users/Jason/Desktop/CCIv2/src/components/Contact.jsx');
+  reactHotLoader.register(Paragraph, 'Paragraph', 'C:/Users/Jason/Desktop/CCIv2/src/components/Contact.jsx');
+  reactHotLoader.register(Contact, 'Contact', 'C:/Users/Jason/Desktop/CCIv2/src/components/Contact.jsx');
+  reactHotLoader.register(_default, 'default', 'C:/Users/Jason/Desktop/CCIv2/src/components/Contact.jsx');
+  leaveModule(module);
+})();
+
+;
+},{"react-hot-loader":25,"react":11,"styled-components":27,"./MainImage.jsx":17,"./images.js":5}],106:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _PictureText = require('./PictureText.jsx');
+
+var _PictureText2 = _interopRequireDefault(_PictureText);
+
+var _images = require('./images');
+
+var _images2 = _interopRequireDefault(_images);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(function () {
+	var enterModule = require('react-hot-loader').enterModule;
+
+	enterModule && enterModule(module);
+})();
+
+var picture1 = _images2.default.englishClassesLife1;
+var picture2 = _images2.default.englishClassesLife2;
+
+var data1 = {
+	title: 'Classes for you',
+	paragraphs: ['For every student, CCI begins with a free meeting to assess their English level. We do this with a short written test and a spoken interview. This helps us know more about your background and learning preferences as well as your language level.', 'With this information, we place each student in a class that fits their current level of English. This ensures that you make good use of your time. You won\'t be overwhelmed with things that are too difficult or waste your time learning things that are too easy. You\'ll be in the right class to make the most of your time and to progress at a fast pace.'],
+	buttonText: 'Schedule your meeting',
+	buttonLink: 'connect',
+	// Text is 'right'
+	format: ['right', 'left'],
+	//format: ['left','right'],
+	background: 'white'
+};
+
+var data3 = {
+	title: 'Learn English & gain confidence',
+	paragraphs: ['Our mission at CCI is to help our students reach their goals. If you want to speak a little bit of English when you travel, work in an English-speaking office or even move abroad, we will help you improve your English to this end.', 'Your lessons at CCI English will help you increase your vocabulary, practice your speaking and gain confidence in your own English abilities. We guarantee that there will be speaking included in every lesson because we want you to be able to function in English in real life situations, not just in the classroom.'],
+	buttonText: 'Schedule your meeting',
+	buttonLink: 'connect',
+	// Text is 'right'
+	format: ['left', 'right'],
+	background: '#f3f3f3'
+};
+
+var EnglishClassesHome = function EnglishClassesHome() {
+	return _react2.default.createElement(
+		'div',
+		null,
+		_react2.default.createElement(_PictureText2.default, { picture: picture1, data: data1 }),
+		_react2.default.createElement(_PictureText2.default, { picture: picture2, data: data3 })
+	);
+};
+
+var _default = EnglishClassesHome;
+exports.default = _default;
+;
+
+(function () {
+	var reactHotLoader = require('react-hot-loader').default;
+
+	var leaveModule = require('react-hot-loader').leaveModule;
+
+	if (!reactHotLoader) {
+		return;
+	}
+
+	reactHotLoader.register(picture1, 'picture1', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishForLife.jsx');
+	reactHotLoader.register(picture2, 'picture2', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishForLife.jsx');
+	reactHotLoader.register(data1, 'data1', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishForLife.jsx');
+	reactHotLoader.register(data3, 'data3', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishForLife.jsx');
+	reactHotLoader.register(EnglishClassesHome, 'EnglishClassesHome', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishForLife.jsx');
+	reactHotLoader.register(_default, 'default', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishForLife.jsx');
+	leaveModule(module);
+})();
+
+;
+},{"react-hot-loader":25,"react":11,"./PictureText.jsx":23,"./images":5}],111:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _PictureText = require('./PictureText.jsx');
+
+var _PictureText2 = _interopRequireDefault(_PictureText);
+
+var _images = require('./images');
+
+var _images2 = _interopRequireDefault(_images);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(function () {
+	var enterModule = require('react-hot-loader').enterModule;
+
+	enterModule && enterModule(module);
+})();
+
+var picture1 = _images2.default.englishClassesWork1;
+var picture2 = _images2.default.englishClassesWork2;
+
+var data1 = {
+	title: 'Professional classes for professional English',
+	paragraphs: ['Our teachers bring their training as English teaching professionals along with their other life experience from other industries, countries and contexts to each lesson.', 'For our students, we provide a free meeting that includes a level placement test and enrollment interview for each student to make sure that the program is right for them and that they are right for the program.', 'The result is a class of professional teachers and engaged students who can work together to provide more than just another English class - they provide a meaningful experience using English in real-life work scenarios.'],
+	buttonText: 'Meet our team',
+	buttonLink: 'connect',
+	// Text is 'right'
+	format: ['right', 'left'],
+	//format: ['left','right'],
+	background: 'white'
+};
+
+var data3 = {
+	title: 'English classes that work for you',
+	paragraphs: ['At CCI English, we want every English for work lesson that you attend to bring you closer to your professional goals. This is why we take such care in placing our students into classes and making sure that the classes meet your needs.', 'To this end, we guarantee that we will place you in a class of people of a similar English level who are interested in working in English. Further, we guarantee that you will practice speaking in each lesson on your course.', 'This is because we want to do more than just have another English class - we want to make sure that each English class gives you the language and practice you need to do better in real-life situations in English so that you can reach your professional goals.'],
+	buttonText: 'Schedule your meeting',
+	buttonLink: 'connect',
+	// Text is 'right'
+	format: ['left', 'right'],
+	background: '#f3f3f3'
+};
+
+var EnglishClassesHome = function EnglishClassesHome() {
+	return _react2.default.createElement(
+		'div',
+		null,
+		_react2.default.createElement(_PictureText2.default, { picture: picture1, data: data1 }),
+		_react2.default.createElement(_PictureText2.default, { picture: picture2, data: data3 })
+	);
+};
+
+var _default = EnglishClassesHome;
+exports.default = _default;
+;
+
+(function () {
+	var reactHotLoader = require('react-hot-loader').default;
+
+	var leaveModule = require('react-hot-loader').leaveModule;
+
+	if (!reactHotLoader) {
+		return;
+	}
+
+	reactHotLoader.register(picture1, 'picture1', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishForWork.jsx');
+	reactHotLoader.register(picture2, 'picture2', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishForWork.jsx');
+	reactHotLoader.register(data1, 'data1', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishForWork.jsx');
+	reactHotLoader.register(data3, 'data3', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishForWork.jsx');
+	reactHotLoader.register(EnglishClassesHome, 'EnglishClassesHome', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishForWork.jsx');
+	reactHotLoader.register(_default, 'default', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishForWork.jsx');
+	leaveModule(module);
+})();
+
+;
+},{"react-hot-loader":25,"react":11,"./PictureText.jsx":23,"./images":5}],105:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _PictureText = require('./PictureText.jsx');
+
+var _PictureText2 = _interopRequireDefault(_PictureText);
+
+var _images = require('./images');
+
+var _images2 = _interopRequireDefault(_images);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(function () {
+	var enterModule = require('react-hot-loader').enterModule;
+
+	enterModule && enterModule(module);
+})();
+
+var picture1 = _images2.default.englishClassesExams1;
+var picture2 = _images2.default.englishClassesExams2;
+
+var data1 = {
+	title: 'Improve your score',
+	paragraphs: ['When studying for an exam, you often have to make a lot of progress in a relatively short amount of time. Whether your goal is to study, work or live in an English-speaking environment, you want the best score possible.', 'We have a free meeting with each student before they enroll for classes to do a level test and to advise them on the best preparation choices to get the score they want on their exam.'],
+	buttonText: 'Schedule your meeting',
+	buttonLink: 'connect',
+	// Text is 'right'
+	format: ['right', 'left'],
+	//format: ['left','right'],
+	background: 'white'
+};
+
+var data3 = {
+	title: 'Winning strategies',
+	paragraphs: ['CCI\'s exam preparation classes are taught by experts both in English and exam strategy, so they help students prepare for what is on the test as well as how to maximize their scores. If you\'re looking to improve your score on the IELTS, TOEFL or one of the Cambridge Suite exams, these are the classes for you.', 'You\'ll have the opportunity to learn about exam strategies, get strategic language input to help you answer exam questions better, and take practice exams to give you a realistic idea of what to expect on test day.'],
+	buttonText: 'Schedule your meeting',
+	buttonLink: 'connect',
+	// Text is 'right'
+	format: ['left', 'right'],
+	background: '#f3f3f3'
+};
+
+var EnglishClassesHome = function EnglishClassesHome() {
+	return _react2.default.createElement(
+		'div',
+		null,
+		_react2.default.createElement(_PictureText2.default, { picture: picture1, data: data1 }),
+		_react2.default.createElement(_PictureText2.default, { picture: picture2, data: data3 })
+	);
+};
+
+var _default = EnglishClassesHome;
+exports.default = _default;
+;
+
+(function () {
+	var reactHotLoader = require('react-hot-loader').default;
+
+	var leaveModule = require('react-hot-loader').leaveModule;
+
+	if (!reactHotLoader) {
+		return;
+	}
+
+	reactHotLoader.register(picture1, 'picture1', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishForExams.jsx');
+	reactHotLoader.register(picture2, 'picture2', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishForExams.jsx');
+	reactHotLoader.register(data1, 'data1', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishForExams.jsx');
+	reactHotLoader.register(data3, 'data3', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishForExams.jsx');
+	reactHotLoader.register(EnglishClassesHome, 'EnglishClassesHome', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishForExams.jsx');
+	reactHotLoader.register(_default, 'default', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishForExams.jsx');
+	leaveModule(module);
+})();
+
+;
+},{"react-hot-loader":25,"react":11,"./PictureText.jsx":23,"./images":5}],108:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _PictureText = require('./PictureText.jsx');
+
+var _PictureText2 = _interopRequireDefault(_PictureText);
+
+var _images = require('./images');
+
+var _images2 = _interopRequireDefault(_images);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(function () {
+	var enterModule = require('react-hot-loader').enterModule;
+
+	enterModule && enterModule(module);
+})();
+
+var picture1 = _images2.default.englishClassesCorporate1;
+var picture2 = _images2.default.englishClassesCorporate2;
+
+var data1 = {
+	title: 'All-inclusive courses',
+	paragraphs: ['CCI English will take responsibility for your English program from start to finish. We provide a free consultation meeting and level testing services. This is an essential part of helping us understand your company\'s and employees\' needs.', 'Once we have assessed your company\'s needs, our team of course designers will produce a customized plan to help your team reach its English goals. We will work with you to set an appropriate class schedule that will help you achieve your goals as efficiently as possible within your budget.', 'As any good manager knows, creating a plan is only the beginning of any project. From the moment you sign on for corporate English lessons with CCI, you will have an account manager from our team who will be your point of contact for any inquiries you have. They will be in charge of managing the teachers at your company, monitoring students, and reporting to you at regular intervals so you know what\'s happening in your classes and how your employees are progressing.'],
+	buttonText: 'Meet our team',
+	buttonLink: 'connect',
+	// Text is 'right'
+	format: ['right', 'left'],
+	//format: ['left','right'],
+	background: 'white'
+};
+
+var data3 = {
+	title: 'Tailored content for your company\'s needs',
+	paragraphs: ['CCI English\'s team is composed of experts in course planning, teaching and assessment. We are skilled in managing courses for General English, Business English, and English for Specific Purposes. We can provide small group courses, private English lessons or a combination in order to get your company\'s English where it needs to be.', 'Our management team is 100% Cambridge University-trained. This means that our team can provide the highest possible quality in English language courses for your team.'],
+	buttonText: 'Schedule your meeting',
+	buttonLink: 'connect',
+	// Text is 'right'
+	//format: ['right','left'],
+	format: ['left', 'right'],
+	background: '#f3f3f3'
+};
+
+var CorporateEnglishClasses = function CorporateEnglishClasses() {
+	return _react2.default.createElement(
+		'div',
+		null,
+		_react2.default.createElement(_PictureText2.default, { picture: picture1, data: data1 }),
+		_react2.default.createElement(_PictureText2.default, { picture: picture2, data: data3 })
+	);
+};
+
+var _default = CorporateEnglishClasses;
+exports.default = _default;
+;
+
+(function () {
+	var reactHotLoader = require('react-hot-loader').default;
+
+	var leaveModule = require('react-hot-loader').leaveModule;
+
+	if (!reactHotLoader) {
+		return;
+	}
+
+	reactHotLoader.register(picture1, 'picture1', 'C:/Users/Jason/Desktop/CCIv2/src/components/CoporateEnglish.jsx');
+	reactHotLoader.register(picture2, 'picture2', 'C:/Users/Jason/Desktop/CCIv2/src/components/CoporateEnglish.jsx');
+	reactHotLoader.register(data1, 'data1', 'C:/Users/Jason/Desktop/CCIv2/src/components/CoporateEnglish.jsx');
+	reactHotLoader.register(data3, 'data3', 'C:/Users/Jason/Desktop/CCIv2/src/components/CoporateEnglish.jsx');
+	reactHotLoader.register(CorporateEnglishClasses, 'CorporateEnglishClasses', 'C:/Users/Jason/Desktop/CCIv2/src/components/CoporateEnglish.jsx');
+	reactHotLoader.register(_default, 'default', 'C:/Users/Jason/Desktop/CCIv2/src/components/CoporateEnglish.jsx');
+	leaveModule(module);
+})();
+
+;
+},{"react-hot-loader":25,"react":11,"./PictureText.jsx":23,"./images":5}],107:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _PictureText = require('./PictureText.jsx');
+
+var _PictureText2 = _interopRequireDefault(_PictureText);
+
+var _images = require('./images');
+
+var _images2 = _interopRequireDefault(_images);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(function () {
+	var enterModule = require('react-hot-loader').enterModule;
+
+	enterModule && enterModule(module);
+})();
+
+var picture1 = _images2.default.englishClassesIndividual1;
+var picture2 = _images2.default.englishClassesIndividual2;
+
+var data1 = {
+	title: 'More than conversation',
+	paragraphs: ['Individual English lessons are a premium product that give students one of the fastest roads to progress available. Your individual course will start with a free meeting where you will take a short level test and we can also interview you about your needs with English. This way we can find the perfect teacher for you.', 'Once you start studying with your teacher, you will have lessons that are tailored to your exact strengths and weaknesses and geared toward helping you make progress in the areas that are most important to you. If you need to write better, your lessons will focus on writing. If you need to speak better, your lessons will focus on speaking. Your teacher will let you know what you\'re doing well at and what you need to work on in each lesson.'],
+	buttonText: 'Meet our team',
+	buttonLink: 'connect',
+	// Text is 'right'
+	//format: ['right','left'],
+	format: ['left', 'right'],
+	background: 'white'
+};
+
+var data3 = {
+	title: 'Quality & convenience',
+	paragraphs: ['In addition to providing the best quality in individual lessons, CCI English also provides the convenience of setting your own schedule, whether you take your private lessons in person or online.', 'CCI  will build your individual class schedule around you. This means you can work your English lessons around your busy schedule with your job, family and friends at times that are convenient for you.', 'You can take individual lessons as a standalone custom course, or you can take them as a supplement to group classes at CCI English. The first step is to contact us to schedule your free meeting with one of our professional advisors.'],
+	buttonText: 'Schedule you meeting',
+	buttonLink: 'connect',
+	// Text is 'right'
+	format: ['right', 'left'],
+	//format: ['left','right'],
+	background: '#f3f3f3'
+};
+
+var EnglishClassesIndividual = function EnglishClassesIndividual() {
+	return _react2.default.createElement(
+		'div',
+		null,
+		_react2.default.createElement(_PictureText2.default, { picture: picture1, data: data1 }),
+		_react2.default.createElement(_PictureText2.default, { picture: picture2, data: data3 })
+	);
+};
+
+var _default = EnglishClassesIndividual;
+exports.default = _default;
+;
+
+(function () {
+	var reactHotLoader = require('react-hot-loader').default;
+
+	var leaveModule = require('react-hot-loader').leaveModule;
+
+	if (!reactHotLoader) {
+		return;
+	}
+
+	reactHotLoader.register(picture1, 'picture1', 'C:/Users/Jason/Desktop/CCIv2/src/components/IndividualLessons.jsx');
+	reactHotLoader.register(picture2, 'picture2', 'C:/Users/Jason/Desktop/CCIv2/src/components/IndividualLessons.jsx');
+	reactHotLoader.register(data1, 'data1', 'C:/Users/Jason/Desktop/CCIv2/src/components/IndividualLessons.jsx');
+	reactHotLoader.register(data3, 'data3', 'C:/Users/Jason/Desktop/CCIv2/src/components/IndividualLessons.jsx');
+	reactHotLoader.register(EnglishClassesIndividual, 'EnglishClassesIndividual', 'C:/Users/Jason/Desktop/CCIv2/src/components/IndividualLessons.jsx');
+	reactHotLoader.register(_default, 'default', 'C:/Users/Jason/Desktop/CCIv2/src/components/IndividualLessons.jsx');
+	leaveModule(module);
+})();
+
+;
+},{"react-hot-loader":25,"react":11,"./PictureText.jsx":23,"./images":5}],109:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _PictureText = require('./PictureText.jsx');
+
+var _PictureText2 = _interopRequireDefault(_PictureText);
+
+var _images = require('./images');
+
+var _images2 = _interopRequireDefault(_images);
+
+var _PictureGallaryText = require('./PictureGallaryText.jsx');
+
+var _PictureGallaryText2 = _interopRequireDefault(_PictureGallaryText);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(function () {
+  var enterModule = require('react-hot-loader').enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+var picture1 = _images2.default.englishClassesStudyAbroad1;
+var picture2 = _images2.default.englishClassesStudyAbroad2;
+var picture3 = _images2.default.englishClassesStudyAbroad3;
+var picture4 = _images2.default.englishClassesStudyAbroad4;
+var picture5 = _images2.default.englishClassesStudyAbroad5;
+var picture6 = _images2.default.englishClassesStudyAbroad6;
+var picture7 = _images2.default.englishClassesStudyAbroad7;
+var picture8 = _images2.default.englishClassesStudyAbroad8;
+var picture9 = _images2.default.englishClassesStudyAbroad9;
+
+var picture10 = _images2.default.englishClassesStudyAbroad10;
+var picture11 = _images2.default.englishClassesStudyAbroad11;
+
+var data1 = {
+  title: 'An all-inclusive trip',
+  paragraphs: ['Our main goal at CCI English is to help you learn English in the best way possible. To this end, we provide you with all of the most important information before you leave on your study abroad trip.', 'We can help you arrange group classes of all sorts, private lessons, sight-seeing trips, accommodation, meals and more. We make it our mission to help you decide on the school and location that fit your English needs, personality and budget.', 'You\'ll know the cost of everything you purchase from us before you leave. Our knowledgeable study abroad advisors will make sure of it. That way you can focus on making the most out of your trip without worrying about unexpected expenses.'],
+  buttonText: 'Contact an advisor',
+  buttonLink: 'connect',
+  // Text is 'right'
+  //format: ['right','left'],
+  format: ['left', 'right'],
+  background: '#f3f3f3'
+};
+
+var pictures = [picture1, picture2, picture3, picture4, picture5, picture6, picture7, picture8, picture9];
+
+var data2 = {
+  title: 'The best schools in every country',
+  paragraphs: ['A study abroad trip is an important investment of your time and money, so choose the best locations and the best schools for your trip. CCI English has a wide network of study abroad locations in the the United States, Canada, United Kingdom, Ireland, Malta and Australia.', 'Our partner schools choose only the best locations for their schools and best teachers for their classes, so you will have excellent classes and an amazing experience while you are abroad. You can choose from General English, Business English, Exam Preparation, University Preparation and more and be confident that you will have the best course possible.', 'All of CCI\'s staff is well educated and well traveled, so our advisors are ready to listen to you regarding what type of experience you want, and to help you choose the school and city that are right for you.'],
+  buttonText: 'Meet our team',
+  buttonLink: 'connect',
+  caption: '',
+  // Text is 'right'
+  //format: ['right','left'],
+  format: ['left', 'right'],
+  background: 'white',
+  pictures: pictures
+};
+
+var data3 = {
+  title: 'The experience of a lifetime',
+  paragraphs: ['Your study abroad trip can be the experience of a lifetime. You\'ll take classes, of course, but you\'ll also do so much more. You will visit faraway places, see beautiful architecture, visit interesting museums, taste food and drinks from around the world, meet people from other countries, and make friends from varying backgrounds.', 'Part of your learning will take place in the classroom, while the other part will happen out in the world, with the people you will meet and befriend, in the places you will one day call your second home.', 'This is why choosing the details of your study abroad trip is so important, and why we provide free meetings to study abroad applicants. We want to make sure you choose the right program to make your trip worth remembering. Take your first step and schedule your free meeting with one of our advisors today.'],
+  buttonText: 'Schedule your meeting',
+  buttonLink: 'connect',
+  // Text is 'right'
+  format: ['right', 'left'],
+  //format: ['left','right'],
+  background: '#f3f3f3'
+};
+
+var CorpoeateEnglishClasses = function CorpoeateEnglishClasses() {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(_PictureGallaryText2.default, { data: data2 }),
+    _react2.default.createElement(_PictureText2.default, { picture: picture10, data: data1 }),
+    _react2.default.createElement(_PictureText2.default, { picture: picture11, data: data3 })
+  );
+};
+
+var _default = CorpoeateEnglishClasses;
+exports.default = _default;
+;
+
+(function () {
+  var reactHotLoader = require('react-hot-loader').default;
+
+  var leaveModule = require('react-hot-loader').leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(picture1, 'picture1', 'C:/Users/Jason/Desktop/CCIv2/src/components/StudyAbroad.jsx');
+  reactHotLoader.register(picture2, 'picture2', 'C:/Users/Jason/Desktop/CCIv2/src/components/StudyAbroad.jsx');
+  reactHotLoader.register(picture3, 'picture3', 'C:/Users/Jason/Desktop/CCIv2/src/components/StudyAbroad.jsx');
+  reactHotLoader.register(picture4, 'picture4', 'C:/Users/Jason/Desktop/CCIv2/src/components/StudyAbroad.jsx');
+  reactHotLoader.register(picture5, 'picture5', 'C:/Users/Jason/Desktop/CCIv2/src/components/StudyAbroad.jsx');
+  reactHotLoader.register(picture6, 'picture6', 'C:/Users/Jason/Desktop/CCIv2/src/components/StudyAbroad.jsx');
+  reactHotLoader.register(picture7, 'picture7', 'C:/Users/Jason/Desktop/CCIv2/src/components/StudyAbroad.jsx');
+  reactHotLoader.register(picture8, 'picture8', 'C:/Users/Jason/Desktop/CCIv2/src/components/StudyAbroad.jsx');
+  reactHotLoader.register(picture9, 'picture9', 'C:/Users/Jason/Desktop/CCIv2/src/components/StudyAbroad.jsx');
+  reactHotLoader.register(picture10, 'picture10', 'C:/Users/Jason/Desktop/CCIv2/src/components/StudyAbroad.jsx');
+  reactHotLoader.register(picture11, 'picture11', 'C:/Users/Jason/Desktop/CCIv2/src/components/StudyAbroad.jsx');
+  reactHotLoader.register(data1, 'data1', 'C:/Users/Jason/Desktop/CCIv2/src/components/StudyAbroad.jsx');
+  reactHotLoader.register(pictures, 'pictures', 'C:/Users/Jason/Desktop/CCIv2/src/components/StudyAbroad.jsx');
+  reactHotLoader.register(data2, 'data2', 'C:/Users/Jason/Desktop/CCIv2/src/components/StudyAbroad.jsx');
+  reactHotLoader.register(data3, 'data3', 'C:/Users/Jason/Desktop/CCIv2/src/components/StudyAbroad.jsx');
+  reactHotLoader.register(CorpoeateEnglishClasses, 'CorpoeateEnglishClasses', 'C:/Users/Jason/Desktop/CCIv2/src/components/StudyAbroad.jsx');
+  reactHotLoader.register(_default, 'default', 'C:/Users/Jason/Desktop/CCIv2/src/components/StudyAbroad.jsx');
+  leaveModule(module);
+})();
+
+;
+},{"react-hot-loader":25,"react":11,"./PictureText.jsx":23,"./images":5,"./PictureGallaryText.jsx":13}],110:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _PictureText = require('./PictureText.jsx');
+
+var _PictureText2 = _interopRequireDefault(_PictureText);
+
+var _images = require('./images');
+
+var _images2 = _interopRequireDefault(_images);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(function () {
+	var enterModule = require('react-hot-loader').enterModule;
+
+	enterModule && enterModule(module);
+})();
+
+var picture1 = _images2.default.englishClassesHome1;
+var picture2 = _images2.default.englishClassesHome2;
+var picture3 = _images2.default.englishClassesHome3;
+
+var data1 = {
+	title: 'Start any week',
+	paragraphs: ['Avoid the waste of time and money that comes with buying classes you can\'t attend. Committing to schedules that someone else has created is difficult at best.', 'This is why most of our courses can be started any week of the year. Too busy to start this week? Not a problem. You can join an existing group course next week. And you don\'t pay for any classes that happened before or after the study period you agree on with CCI English.', 'Meet with one of our advisors for free to find the best level, class and schedule that suits your life. '],
+	buttonText: 'Schedule your meeting',
+	buttonLink: 'connect',
+	// Text is 'right'
+	format: ['right', 'left'],
+	//format: ['left','right'],
+	background: '#f3f3f3'
+};
+
+var data2 = {
+	title: 'Choose your class',
+	paragraphs: ['At CCI English, we believe that learning English is not a one-size-fits-all situation. We offer classes of various sizes, each with a different focus.', 'You can also find specialty products, such as private classes in person or online, Corporate English programs for your company, or a study abroad program to help you arrange an English study trip in another country. ', 'CCI English\'s advisors are readily available for a free level test and meeting to help you decide which classes are best for you.'],
+	buttonText: 'Schedule your meeting',
+	buttonLink: 'connect',
+	// Text is 'right'
+	//format: ['right','left'],
+	format: ['left', 'right'],
+	background: 'white'
+};
+
+var data3 = {
+	title: 'Study with the best teachers & materials',
+	paragraphs: ['CCI English teachers are highly trained and skilled in their profession. They have national teaching qualifications, Cambridge University qualifications, or both and are ready to use their expertise to help you reach your English language learning goals.', 'We also have the best materials for each class. Our coursebooks are imported from England and come with access to exclusive online content for you to use in class or at home. For specialized lessons or classes, your teacher will choose the best combination of coursebook material and real-world material such as articles, podcasts and videos to help you progress with your English.', 'With CCI, you receive expert English instruction and high-quality materials, all of which come standard in your lesson package.'],
+	buttonText: 'Meet our team',
+	buttonLink: 'connect',
+	// Text is 'right'
+	format: ['right', 'left'],
+	background: '#f3f3f3'
+};
+
+var EnglishClassesHome = function EnglishClassesHome() {
+	return _react2.default.createElement(
+		'div',
+		null,
+		_react2.default.createElement(_PictureText2.default, { picture: picture1, data: data1 }),
+		_react2.default.createElement(_PictureText2.default, { picture: picture2, data: data2 }),
+		_react2.default.createElement(_PictureText2.default, { picture: picture3, data: data3 })
+	);
+};
+
+var _default = EnglishClassesHome;
+exports.default = _default;
+;
+
+(function () {
+	var reactHotLoader = require('react-hot-loader').default;
+
+	var leaveModule = require('react-hot-loader').leaveModule;
+
+	if (!reactHotLoader) {
+		return;
+	}
+
+	reactHotLoader.register(picture1, 'picture1', 'C:/Users/Jason/Desktop/CCIv2/src/components/ClassesHome.jsx');
+	reactHotLoader.register(picture2, 'picture2', 'C:/Users/Jason/Desktop/CCIv2/src/components/ClassesHome.jsx');
+	reactHotLoader.register(picture3, 'picture3', 'C:/Users/Jason/Desktop/CCIv2/src/components/ClassesHome.jsx');
+	reactHotLoader.register(data1, 'data1', 'C:/Users/Jason/Desktop/CCIv2/src/components/ClassesHome.jsx');
+	reactHotLoader.register(data2, 'data2', 'C:/Users/Jason/Desktop/CCIv2/src/components/ClassesHome.jsx');
+	reactHotLoader.register(data3, 'data3', 'C:/Users/Jason/Desktop/CCIv2/src/components/ClassesHome.jsx');
+	reactHotLoader.register(EnglishClassesHome, 'EnglishClassesHome', 'C:/Users/Jason/Desktop/CCIv2/src/components/ClassesHome.jsx');
+	reactHotLoader.register(_default, 'default', 'C:/Users/Jason/Desktop/CCIv2/src/components/ClassesHome.jsx');
+	leaveModule(module);
+})();
+
+;
+},{"react-hot-loader":25,"react":11,"./PictureText.jsx":23,"./images":5}],8:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _templateObject = _taggedTemplateLiteral(['\n   \n   display: grid;\n   padding: 10px;\n   margin: 0 auto;\n   align-content: space-between;\n   justify-content: space-around;\n   margin-top: 10px;\n   grid-gap: 10px;\n   \n   background: #e0dbdb;\n   color: white;\n   grid-template-columns: minmax(140px, max-content)\n                       repeat(auto-fill, 140px);\n'], ['\n   \n   display: grid;\n   padding: 10px;\n   margin: 0 auto;\n   align-content: space-between;\n   justify-content: space-around;\n   margin-top: 10px;\n   grid-gap: 10px;\n   \n   background: #e0dbdb;\n   color: white;\n   grid-template-columns: minmax(140px, max-content)\n                       repeat(auto-fill, 140px);\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n     padding: 2px;\n     color: black;\n     text-align: center;\n     border-bottom: 2px #e0dbdb solid;\n     &:hover {\n      border-bottom: 2px rgb(80, 200, 235) solid;\n      transition: 0.5s; /* delays for 1 second */\n      -webkit-transition: 0.5s; /* for Safari & Chrome */\t\n       cursor: pointer;\n     }\n'], ['\n     padding: 2px;\n     color: black;\n     text-align: center;\n     border-bottom: 2px #e0dbdb solid;\n     &:hover {\n      border-bottom: 2px rgb(80, 200, 235) solid;\n      transition: 0.5s; /* delays for 1 second */\n      -webkit-transition: 0.5s; /* for Safari & Chrome */\t\n       cursor: pointer;\n     }\n']);
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _styledComponents = require('styled-components');
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _images = require('./images.js');
+
+var _images2 = _interopRequireDefault(_images);
+
+var _MainImage = require('./MainImage.jsx');
+
+var _MainImage2 = _interopRequireDefault(_MainImage);
+
+var _EnglishForLife = require('./EnglishForLife.jsx');
+
+var _EnglishForLife2 = _interopRequireDefault(_EnglishForLife);
+
+var _EnglishForWork = require('./EnglishForWork.jsx');
+
+var _EnglishForWork2 = _interopRequireDefault(_EnglishForWork);
+
+var _EnglishForExams = require('./EnglishForExams.jsx');
+
+var _EnglishForExams2 = _interopRequireDefault(_EnglishForExams);
+
+var _CoporateEnglish = require('./CoporateEnglish.jsx');
+
+var _CoporateEnglish2 = _interopRequireDefault(_CoporateEnglish);
+
+var _IndividualLessons = require('./IndividualLessons.jsx');
+
+var _IndividualLessons2 = _interopRequireDefault(_IndividualLessons);
+
+var _StudyAbroad = require('./StudyAbroad.jsx');
+
+var _StudyAbroad2 = _interopRequireDefault(_StudyAbroad);
+
+var _ClassesHome = require('./ClassesHome.jsx');
+
+var _ClassesHome2 = _interopRequireDefault(_ClassesHome);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(function () {
+  var enterModule = require('react-hot-loader').enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var classAbroad = _images2.default.classAbroad;
+var classLife = _images2.default.classLife;
+var classCorporate = _images2.default.classCorporate;
+var classExams = _images2.default.classExams;
+var classIndividual = _images2.default.classIndividual;
+var classWork = _images2.default.classWork;
+var classHome = _images2.default.classHome;
+
+var Menu = _styledComponents2.default.div(_templateObject);
+
+var MenuItem = _styledComponents2.default.div(_templateObject2);
+
+var MenuBar = function (_React$Component) {
+  _inherits(MenuBar, _React$Component);
+
+  function MenuBar(props) {
+    _classCallCheck(this, MenuBar);
+
+    var _this = _possibleConstructorReturn(this, (MenuBar.__proto__ || Object.getPrototypeOf(MenuBar)).call(this, props));
+
+    _this.state = {
+      mainPictures: [classHome, classLife, classWork, classExams, classCorporate, classIndividual, classAbroad],
+      menuItems: ['English classes', 'English for Life', 'English for work', 'English for exams', 'Corporate English', 'Individual lessons', 'Study abroad'],
+      mainText: ['How good is your English?', 'English for Life', 'English for work', 'English for exams', 'Corporate English', 'Individual lessons', 'Study abroad'],
+      phrase: 'How good is your English?',
+      image: classHome,
+      classType: 0
+
+    };
+    _this.menuItem = _this.menuItem.bind(_this);
+    return _this;
+  }
+
+  _createClass(MenuBar, [{
+    key: 'menuItem',
+    value: function menuItem(e) {
+      var phrase = this.state.mainText[e];
+      var image = this.state.mainPictures[e];
+      this.setState({ classType: e });
+      this.setState({ phrase: phrase });
+      this.setState({ image: image });
+    }
+  }, {
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      this.setState({ phrase: 'How good is your English?' });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var content = null;
+      switch (this.state.classType) {
+        case 0:
+          content = _react2.default.createElement(_ClassesHome2.default, null);
+          break;
+        case 1:
+          content = _react2.default.createElement(_EnglishForLife2.default, null);
+          break;
+        case 2:
+          content = _react2.default.createElement(_EnglishForWork2.default, null);
+          break;
+        case 3:
+          content = _react2.default.createElement(_EnglishForExams2.default, null);
+          break;
+        case 4:
+          content = _react2.default.createElement(_CoporateEnglish2.default, null);
+          break;
+        case 5:
+          content = _react2.default.createElement(_IndividualLessons2.default, null);
+          break;
+        case 6:
+          content = _react2.default.createElement(_StudyAbroad2.default, null);
+          break;
+        default:
+          content = _react2.default.createElement(_ClassesHome2.default, null);
+
+      }
+
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          Menu,
+          null,
+          this.state.menuItems.map(function (item, index) {
+            return _react2.default.createElement(
+              MenuItem,
+              { key: index + '-menu', onClick: function onClick(e) {
+                  return _this2.menuItem(index);
+                } },
+              item
+            );
+          })
+        ),
+        _react2.default.createElement(_MainImage2.default, { text: this.state.phrase, image: this.state.image }),
+        content
+      );
+    }
+  }, {
+    key: '__reactstandin__regenerateByEval',
+    value: function __reactstandin__regenerateByEval(key, code) {
+      this[key] = eval(code);
+    }
+  }]);
+
+  return MenuBar;
+}(_react2.default.Component);
+
+var _default = MenuBar;
+exports.default = _default;
+;
+
+(function () {
+  var reactHotLoader = require('react-hot-loader').default;
+
+  var leaveModule = require('react-hot-loader').leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(classAbroad, 'classAbroad', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishClasses.jsx');
+  reactHotLoader.register(classLife, 'classLife', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishClasses.jsx');
+  reactHotLoader.register(classCorporate, 'classCorporate', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishClasses.jsx');
+  reactHotLoader.register(classExams, 'classExams', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishClasses.jsx');
+  reactHotLoader.register(classIndividual, 'classIndividual', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishClasses.jsx');
+  reactHotLoader.register(classWork, 'classWork', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishClasses.jsx');
+  reactHotLoader.register(classHome, 'classHome', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishClasses.jsx');
+  reactHotLoader.register(Menu, 'Menu', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishClasses.jsx');
+  reactHotLoader.register(MenuItem, 'MenuItem', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishClasses.jsx');
+  reactHotLoader.register(MenuBar, 'MenuBar', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishClasses.jsx');
+  reactHotLoader.register(_default, 'default', 'C:/Users/Jason/Desktop/CCIv2/src/components/EnglishClasses.jsx');
+  leaveModule(module);
+})();
+
+;
+},{"react-hot-loader":25,"react":11,"styled-components":27,"./images.js":5,"./MainImage.jsx":17,"./EnglishForLife.jsx":106,"./EnglishForWork.jsx":111,"./EnglishForExams.jsx":105,"./CoporateEnglish.jsx":108,"./IndividualLessons.jsx":107,"./StudyAbroad.jsx":109,"./ClassesHome.jsx":110}],22:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -29905,7 +31154,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],44:[function(require,module,exports) {
+},{}],12:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -29936,13 +31185,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":100}],14:[function(require,module,exports) {
+},{"./bundle-url":22}],7:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":44}],6:[function(require,module,exports) {
+},{"_css_loader":12}],3:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -29978,6 +31227,14 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 var _OurSchool = require('./OurSchool.jsx');
 
 var _OurSchool2 = _interopRequireDefault(_OurSchool);
+
+var _Contact = require('./Contact.jsx');
+
+var _Contact2 = _interopRequireDefault(_Contact);
+
+var _EnglishClasses = require('./EnglishClasses.jsx');
+
+var _EnglishClasses2 = _interopRequireDefault(_EnglishClasses);
 
 require('./styles.css');
 
@@ -30172,7 +31429,9 @@ var App = function (_React$Component) {
           ),
           _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: About }),
           _react2.default.createElement(_reactRouterDom.Route, { path: '/topics', component: Topics }),
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/our-school', component: _OurSchool2.default })
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/our-school', component: _OurSchool2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/english-classes', component: _EnglishClasses2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/contactcci', component: _Contact2.default })
         )
       );
     }
@@ -30217,7 +31476,7 @@ exports.default = _default;
 })();
 
 ;
-},{"react-hot-loader":25,"react":8,"react-router-dom":27,"./images.js":12,"styled-components":26,"./OurSchool.jsx":13,"./styles.css":14}],4:[function(require,module,exports) {
+},{"react-hot-loader":25,"react":11,"react-router-dom":26,"./images.js":5,"styled-components":27,"./OurSchool.jsx":4,"./Contact.jsx":6,"./EnglishClasses.jsx":8,"./styles.css":7}],2:[function(require,module,exports) {
 'use strict';
 
 var _react = require('react');
@@ -30235,7 +31494,7 @@ var _App2 = _interopRequireDefault(_App);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('root'));
-},{"react":8,"react-dom":9,"./src/components/App.jsx":6}],109:[function(require,module,exports) {
+},{"react":11,"react-dom":9,"./src/components/App.jsx":3}],103:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -30257,7 +31516,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '49613' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52680' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -30358,5 +31617,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[109,4])
+},{}]},{},[103,2])
 //# sourceMappingURL=/dist/CCIv2.map

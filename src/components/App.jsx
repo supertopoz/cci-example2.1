@@ -10,6 +10,8 @@ import images from './images.js'
 import styled from 'styled-components'
 
 import OurSchool from './OurSchool.jsx'
+import Contact from './Contact.jsx'
+import EnglishClasses from './EnglishClasses.jsx'
 
 import './styles.css';
 
@@ -203,6 +205,8 @@ class App extends React.Component {
 		<Route path="/about" component={About}/>
 		<Route path="/topics" component={Topics}/>
     <Route path="/our-school" component={OurSchool}/>
+    <Route path="/english-classes" component={EnglishClasses}/>
+    <Route path="/contactcci" component={Contact}/>
 		</div>	    
 		</Router>
 

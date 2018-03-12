@@ -1,8 +1,8 @@
 const images = {
 
-"class-individual":"https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-individual.jpg?alt=media",
-"class-life":"https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-life.jpg?alt=media",
-"class-work":"https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-work.jpg?alt=media",
+"classIndividual":"https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-individual.jpg?alt=media",
+"classLife":"https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-life.jpg?alt=media",
+"classWork":"https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-work.jpg?alt=media",
 "contactusbanner":"https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/contactusbanner.jpg?alt=media",
 "englishClassesCorporate1":"https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesCorporate1.jpg?alt=media",
 "englishClassesCorporate2":"https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesCorporate2.jpg?alt=media",
@@ -49,10 +49,10 @@ const images = {
 "cambridgeLogo":"https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/cambridgeLogo.png?alt=media",
 "cambridgeUni":"https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/cambridgeUni.png?alt=media",
 "ccilogo":"https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/ccilogo.png?alt=media",
-"class-abroad":"https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-abroad.jpg?alt=media",
-"class-corporate":"https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-corporate.jpg?alt=media",
-"class-exams":"https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-exams.jpg?alt=media",
-"class-home":"https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-home.jpg?alt=media"
+"classAbroad":"https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-abroad.jpg?alt=media",
+"classCorporate":"https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-corporate.jpg?alt=media",
+"classExams":"https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-exams.jpg?alt=media",
+"classHome":"https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-home.jpg?alt=media"
 
 }
 
