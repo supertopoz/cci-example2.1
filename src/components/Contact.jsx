@@ -87,6 +87,20 @@ const Paragraph = styled.p`
   line-height: 27px;
 `;
 
+const Labels = styled('label')`
+  font-family: 'Rubik', sans-serif;
+  color: #717070;
+  font-weight: lighter !important;
+  letter-spacing: 1px;
+  line-height: 27px;
+`;
+
+const Heading = styled('h1')`
+  font-family: 'Roboto', sans-serif;
+  color: #50C8EB;
+  font-size: 45px;
+`;
+
 
 class Contact extends React.Component {
   constructor(props){
@@ -103,7 +117,7 @@ class Contact extends React.Component {
   <MainImage  text={'Contact CCI English'} image={picture} /> 
   <Wrapper> 
   <TextBlock> 
-    <h1 style={{textAlign:'center'}}>Send us a message</h1> 
+    <Heading style={{textAlign:'center'}}>Send us a message</Heading> 
   <div>
   <Paragraph>Contact us with your questions about English classes. Everyone who works at our school is knowledgable about English, teaching and traveling.</Paragraph>
   <Paragraph>Our staff is happy to provide information via email, on the phone, over Skype or in person at our school. </Paragraph>
@@ -116,45 +130,45 @@ class Contact extends React.Component {
   </div>   
   </TextBlock>
   <ContactFormBlock>
-    <label>
+    <Labels>
     First Name:<span style={{color:'red'}}>*</span>
     <br/>
     <InputItem type="text" name="name" required/>
-  </label>
-  <label>
+  </Labels>
+  <Labels>
     Last Name <span style={{color:'red'}}>*</span>:
     <br/>
     <InputItem type="text" name="name" />
-  </label>
+  </Labels>
 
-  <label>
+  <Labels>
     Email<span style={{color:'red'}}>*</span>:
     <br/>
     <InputItem type="text" name="name" />
-  </label>
+  </Labels>
 
-  <label>
+  <Labels>
     Phone Number<span style={{color:'red'}}>*</span>:
     <br/>
     <InputItem type="text" name="name" />
-  </label>
+  </Labels>
 
-  <label>
+  <Labels>
     Message<span style={{color:'red'}}>*</span>:
     <br/>
     <textarea type="text" name="name" />
-  </label>
+  </Labels>
 
   <InputItem type="submit" value="Submit" />
   </ContactFormBlock>
   </Wrapper>
  <TextBlock>
- <h1 style={{textAlign:'center'}}>Call us</h1> 
+ <Heading style={{textAlign:'center'}}>Call us</Heading> 
   <Paragraph>In Israel: 073-769-4499</Paragraph>
   <Paragraph>Outside of Israel: +972 73-769-4499</Paragraph>
  </TextBlock>
   <TextBlock>
-  <h1 style={{textAlign:'center'}}>Visit our school</h1> 
+  <Heading style={{textAlign:'center'}}>Visit our school</Heading> 
   <Paragraph>Visit our school</Paragraph>
  </TextBlock>
 

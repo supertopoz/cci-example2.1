@@ -13,12 +13,15 @@ const MainImageHolder = styled('img')`
 
 const Heading = styled('h1')`
   margin-top: -15px;
-
+font-family: 'Roboto', sans-serif;
+  color: #50C8EB;
+  font-size: 45px;
   @media (max-width: 599px) {
     font-size: 20px;
     margin-top: 0px;
     }
 `;
+
 
 
 const HeadingBanner = styled.div`

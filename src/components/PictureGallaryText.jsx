@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import GreenButton from './GreenButton.jsx';
 
 
 
@@ -103,6 +103,20 @@ const Title = styled.div`
   text-align:center;
 `;
 
+const Heading = styled('h1')`
+  font-family: 'Roboto', sans-serif;
+  color: #50C8EB;
+  font-size: 45px;
+`;
+
+const Caption = styled('p')`
+  color: #50C8EB;
+  letter-spacing: 0px;
+  line-height: none;
+  font-size: 12px;
+`;
+
+
 class PictureGallaryText extends React.Component {
   constructor(props){
     super();
@@ -122,14 +136,14 @@ class PictureGallaryText extends React.Component {
       <PictureGallary>
       {this.props.data.pictures.map((pic, index)=> <PartyPics key={`${index}-pics`} src={pic} alt="random picture" />)}
       </PictureGallary>
-      <Paragraph className="caption">{this.props.data.caption}</Paragraph>        
+      <Caption className="caption">{this.props.data.caption}</Caption>        
     </Left>
     <Right>
-    <Title><h1 style={{textAlign:'center'}}>{ this.props.data.title }</h1></Title>
+    <Title><Heading style={{textAlign:'center'}}>{ this.props.data.title }</Heading></Title>
     <div>
       {this.props.data.paragraphs.map((text, index) => <Paragraph key={`${index}-text`} >{text}</Paragraph>)}    
     </div>
-    <Btn>{this.props.data.buttonText}</Btn>
+    <GreenButton text={this.props.data.buttonText} />
     </Right>   
   </Wrapper>
 )

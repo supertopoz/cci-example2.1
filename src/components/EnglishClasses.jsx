@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import images from './images.js'
 
 import MainImage from './MainImage.jsx';
@@ -135,8 +136,11 @@ class MenuBar extends React.Component {
   <div>
 
   <Menu>
+ 
     { this.state.menuItems.map((item, index)=> <MenuItem key={`${index}-menu`} onClick={(e)=> this.menuItem(index)} >{item}</MenuItem>)}
+
     </Menu>
+
     <MainImage  text={this.state.phrase} image={this.state.image} /> 
     {content}
   </div>

@@ -154,7 +154,7 @@ class App extends React.Component {
   		</MenuButtons>  
   		<MenuItemLogoRight>
     		<ExternalLink href="//www.cambridgeenglish.org/" target="_blank">
-    		  <img style={{float:'right',padding:'10px'}} src={images.cambridgeLogo} alt="Logo"/>
+    		  <img style={{float:'right',padding:'10px', width:'150px'}} src={images.cambridgeLogo} alt="Logo"/>
     		</ExternalLink>
   		</MenuItemLogoRight>
 		</Menu>			

@@ -55,9 +55,11 @@ const data3 = {
 
 const EnglishClassesHome = () => (
   <div>
+
     <PictureText picture={picture1} data={data1} />
     <PictureText picture={picture2} data={data2} />
     <PictureText picture={picture3} data={data3} />
+    
   </div>
 )
 

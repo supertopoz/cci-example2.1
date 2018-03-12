@@ -69,6 +69,13 @@ const Paragraph = styled.p`
   line-height: 27px;
 `;
 
+const Heading = styled('h1')`
+  font-family: 'Roboto', sans-serif;
+  color: #50C8EB;
+  font-size: 45px;
+`;
+
+
 class PictureLeftTextRight extends React.Component {
    
    constructor(props){
@@ -97,7 +104,7 @@ class PictureLeftTextRight extends React.Component {
    const right = (
 
     <TextBlock>
-    <h1 style={{textAlign:'center'}}>{this.props.data.title}</h1>  
+    <Heading style={{textAlign:'center'}}>{this.props.data.title}</Heading>  
     <div> 
      { this.props.data.paragraphs.map((text, index)=> <Paragraph key={`${index}-text`}>{text}</Paragraph>) } 
     </div>

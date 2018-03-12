@@ -1,7 +1,7 @@
 import React from 'react'
 import PictureText from './PictureText.jsx';
 import images from './images';
-
+import styled from 'styled-components'
 
 
 const picture = images.qTeachers;
@@ -21,10 +21,16 @@ const data = {
   background: 'white'
 }
 
+const Heading = styled('h1')`
+  font-family: 'Roboto', sans-serif;
+  color: #50C8EB;
+  font-size: 45px;
+`;
+
 
 const LearnFromQualifiedTeachers = () => (
     <div>
-    <h1 style={{textAlign:'center'}} >Learn from qualified teachers</h1>
+    <Heading style={{textAlign:'center'}} >Learn from qualified teachers</Heading>
     <PictureText picture={picture} data={data} />
   </div> 
 

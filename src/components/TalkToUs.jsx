@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 import PictureText from './PictureText.jsx';
 import images from './images';
 
@@ -18,9 +19,16 @@ const data = {
   background: 'white'
 }
 
+const Heading = styled('h1')`
+  font-family: 'Roboto', sans-serif;
+  color: #50C8EB;
+  font-size: 45px;
+`;
+
+
 const TalkToUs = () => (
   <div>
-    <h1 style={{textAlign:'center'}} >Talk To Us</h1>
+    <Heading style={{textAlign:'center'}} >Talk To Us</Heading>
     <PictureText picture={picture} data={data} />
   </div>  
 

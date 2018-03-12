@@ -104,6 +104,12 @@ const GallaryMini = styled('img')`
   margin: 2px;
 `;
 
+const Heading = styled('h1')`
+  font-family: 'Roboto', sans-serif;
+  color: #50C8EB;
+  font-size: 45px;
+`;
+
 class QualityAndComfort extends React.Component {
   
   constructor(props) {
@@ -128,10 +134,10 @@ class QualityAndComfort extends React.Component {
 	return (
   <Wrapper>
      <ComfortBlurb >
-      <h1 style={{textAlign:'center'}}
+      <Heading style={{textAlign:'center'}}
 	  >
 	  Quality and comfort
-	  </h1>  
+	  </Heading>  
 	  <div>
 	      <Paragraph>At CCI English, we speak with every new student before they enroll in classes.</Paragraph>
 	      <Paragraph>Our first meeting will include an evaluation of your English level and a short interview about your English learning. We interview students and listen to them talk about their life, work, interests and goals because each student has a different situation and different needs. These meetings are always free of charge because each student deserves to know about their school and classes before they sign up.</Paragraph>
