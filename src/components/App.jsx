@@ -14,8 +14,6 @@ import Contact from './Contact.jsx'
 import EnglishClasses from './EnglishClasses.jsx'
 import Home from './Home.jsx'
 
-import './styles.css';
-
 
 const Menu = styled.div` 
   margin: 0 auto;
