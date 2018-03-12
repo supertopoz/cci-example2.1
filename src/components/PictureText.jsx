@@ -29,7 +29,8 @@ const wrapperStyle = `
 @media (min-width: 900px) {
     display: grid;
     grid-gap: 2px;
-    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+      "cam-left cam-right"
 }
 /*for-desktop-up*/
 
