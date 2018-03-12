@@ -5,16 +5,16 @@ import {
   Link
 } from 'react-router-dom'
 import { hot } from 'react-hot-loader'
-import logo from '../components/assets/ccilogo.png'
-import camLogo from '../components/assets/cambridgeLogo.png'
+
+import images from './images.js'
 import styled from 'styled-components'
+
+import OurSchool from './OurSchool.jsx'
+
 import './styles.css';
 
-const Home = () => (
-  <div>
-    <h2>Home</h2>
-  </div>
-)
+
+
 
 const About = () => (
   <div>
@@ -163,45 +163,46 @@ const StyledLogo = styled('img')`
 `;
 
 
+
 class App extends React.Component {
   constructor(props){
   	super(props);
   }
-  render(){
 
+
+  render(){
   	return(
   	
 		<Router>
-		<div>
+		<div className="wrapper">
 		<Menu>
-		<MenuItemLogoLeft>  
-		<Link to="/"><StyledLogo src={logo} alt="Logo"/></Link>
-		</MenuItemLogoLeft>
-		<MenuButtons>
-		<MenuItem>  
-		<StyledLink to="/our-school">Our school</StyledLink>
-		</MenuItem>  
-		<MenuItem>  
-		<StyledLink to="/english-classes">English classes</StyledLink>
-		</MenuItem>  
-		<MenuItem>
-		<StyledLink to="/english-classes">CELTA</StyledLink>
-		</MenuItem>
-		<MenuItem>    
-		<StyledLink to="/contactcci">Contact</StyledLink>
-		</MenuItem>  
-		<hr/>              
-		
-		</MenuButtons>  
-		<MenuItemLogoRight>
-		<ExternalLink href="//www.cambridgeenglish.org/" target="_blank">
-		<img style={{float:'right',padding:'10px'}} src={camLogo} alt="Logo"/>
-		</ExternalLink>
-		</MenuItemLogoRight>
+  		<MenuItemLogoLeft>  
+  		  <Link to="/"><StyledLogo src={images.ccilogo} alt="Logo"/></Link>
+  		</MenuItemLogoLeft>
+  		<MenuButtons>
+    		<MenuItem>  
+    		  <StyledLink to="/our-school">Our school</StyledLink>
+    		</MenuItem>  
+    		<MenuItem>  
+    		  <StyledLink to="/english-classes">English classes</StyledLink>
+    		</MenuItem>  
+    		<MenuItem>
+    		  <StyledLink to="/english-classes">CELTA</StyledLink>
+    		</MenuItem>
+    		<MenuItem>    
+    		  <StyledLink to="/contactcci">Contact</StyledLink>
+    		</MenuItem>               
+  		</MenuButtons>  
+  		<MenuItemLogoRight>
+    		<ExternalLink href="//www.cambridgeenglish.org/" target="_blank">
+    		  <img style={{float:'right',padding:'10px'}} src={images.cambridgeLogo} alt="Logo"/>
+    		</ExternalLink>
+  		</MenuItemLogoRight>
 		</Menu>	
-		<Route exact path="/" component={Home}/>
+	{/*	<Route exact path="/" component={Home}/>*/}
 		<Route path="/about" component={About}/>
 		<Route path="/topics" component={Topics}/>
+    <Route path="/our-school" component={OurSchool}/>
 		</div>	    
 		</Router>
 

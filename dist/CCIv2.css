@@ -1,15 +1,10 @@
-
+.wrapper {
+/*  max-width: 1200px;*/
+/*marign: 0 auto;*/
+}
 
 img{
  width: 150px;	
-}
-
-p {
-  font-family: 'Rubik', sans-serif;
-  color: #717070;
-  font-weight: lighter !important;
-  letter-spacing: 1px;
-  line-height: 27px;
 }
 
 label {

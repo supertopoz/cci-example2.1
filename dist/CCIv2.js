@@ -71,7 +71,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({33:[function(require,module,exports) {
+})({43:[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -163,7 +163,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
-},{}],48:[function(require,module,exports) {
+},{}],54:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -218,7 +218,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],10:[function(require,module,exports) {
+},{}],19:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.production.min.js
  *
@@ -241,7 +241,7 @@ var U={Children:{map:function(a,b,e){if(null==a)return a;var c=[];T(a,c,null,b,e
 d=a.key,g=a.ref,k=a._owner;if(null!=b){void 0!==b.ref&&(g=b.ref,k=G.current);void 0!==b.key&&(d=""+b.key);if(a.type&&a.type.defaultProps)var f=a.type.defaultProps;for(h in b)H.call(b,h)&&!I.hasOwnProperty(h)&&(c[h]=void 0===b[h]&&void 0!==f?f[h]:b[h])}var h=arguments.length-2;if(1===h)c.children=e;else if(1<h){f=Array(h);for(var l=0;l<h;l++)f[l]=arguments[l+2];c.children=f}return{$$typeof:r,type:a.type,key:d,ref:g,props:c,_owner:k}},createFactory:function(a){var b=J.bind(null,a);b.type=a;return b},
 isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:G,assign:m}},V=Object.freeze({default:U}),W=V&&U||V;module.exports=W["default"]?W["default"]:W;
 
-},{"object-assign":33,"fbjs/lib/emptyObject":48,"fbjs/lib/emptyFunction":50}],56:[function(require,module,exports) {
+},{"object-assign":43,"fbjs/lib/emptyObject":54,"fbjs/lib/emptyFunction":50}],66:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -295,7 +295,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],57:[function(require,module,exports) {
+},{}],67:[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -358,7 +358,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = warning;
-},{"./emptyFunction":50}],36:[function(require,module,exports) {
+},{"./emptyFunction":50}],65:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -372,7 +372,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],34:[function(require,module,exports) {
+},{}],64:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -432,7 +432,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-},{"fbjs/lib/invariant":56,"fbjs/lib/warning":57,"./lib/ReactPropTypesSecret":36}],13:[function(require,module,exports) {
+},{"fbjs/lib/invariant":66,"fbjs/lib/warning":67,"./lib/ReactPropTypesSecret":65}],18:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.development.js
  *
@@ -1784,7 +1784,7 @@ if ('development' !== "production") {
     module.exports = react;
   })();
 }
-},{"object-assign":33,"fbjs/lib/emptyObject":48,"fbjs/lib/invariant":56,"fbjs/lib/warning":57,"fbjs/lib/emptyFunction":50,"prop-types/checkPropTypes":34}],7:[function(require,module,exports) {
+},{"object-assign":43,"fbjs/lib/emptyObject":54,"fbjs/lib/invariant":66,"fbjs/lib/warning":67,"fbjs/lib/emptyFunction":50,"prop-types/checkPropTypes":64}],8:[function(require,module,exports) {
 'use strict';
 
 if ('development' === 'production') {
@@ -1792,7 +1792,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":10,"./cjs/react.development.js":13}],49:[function(require,module,exports) {
+},{"./cjs/react.production.min.js":19,"./cjs/react.development.js":18}],47:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -1901,7 +1901,7 @@ var EventListener = {
 };
 
 module.exports = EventListener;
-},{"./emptyFunction":50}],52:[function(require,module,exports) {
+},{"./emptyFunction":50}],48:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1938,7 +1938,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],53:[function(require,module,exports) {
+},{}],49:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2050,7 +2050,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":63}],55:[function(require,module,exports) {
+},{"./isNode":63}],52:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2088,7 +2088,7 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":60}],54:[function(require,module,exports) {
+},{"./isTextNode":60}],53:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2113,7 +2113,7 @@ function focusNode(node) {
 }
 
 module.exports = focusNode;
-},{}],12:[function(require,module,exports) {
+},{}],17:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.production.min.js
  *
@@ -2344,7 +2344,7 @@ var Sg={createPortal:Qg,findDOMNode:function(a){if(null==a)return null;if(1===a.
 E("40");return a._reactRootContainer?(Z.unbatchedUpdates(function(){Pg(null,null,a,!1,function(){a._reactRootContainer=null})}),!0):!1},unstable_createPortal:Qg,unstable_batchedUpdates:tc,unstable_deferredUpdates:Z.deferredUpdates,flushSync:Z.flushSync,__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{EventPluginHub:mb,EventPluginRegistry:Va,EventPropagators:Cb,ReactControlledComponent:qc,ReactDOMComponentTree:sb,ReactDOMEventListener:xd}};
 Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",rendererPackageName:"react-dom"});var Tg=Object.freeze({default:Sg}),Ug=Tg&&Sg||Tg;module.exports=Ug["default"]?Ug["default"]:Ug;
 
-},{"react":7,"fbjs/lib/ExecutionEnvironment":49,"object-assign":33,"fbjs/lib/emptyFunction":50,"fbjs/lib/EventListener":51,"fbjs/lib/getActiveElement":52,"fbjs/lib/shallowEqual":53,"fbjs/lib/containsNode":55,"fbjs/lib/focusNode":54,"fbjs/lib/emptyObject":48}],61:[function(require,module,exports) {
+},{"react":8,"fbjs/lib/ExecutionEnvironment":47,"object-assign":43,"fbjs/lib/emptyFunction":50,"fbjs/lib/EventListener":51,"fbjs/lib/getActiveElement":48,"fbjs/lib/shallowEqual":49,"fbjs/lib/containsNode":52,"fbjs/lib/focusNode":53,"fbjs/lib/emptyObject":54}],98:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2375,7 +2375,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],58:[function(require,module,exports) {
+},{}],90:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2412,7 +2412,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":61}],62:[function(require,module,exports) {
+},{"./hyphenate":98}],92:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -2442,7 +2442,7 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-},{}],59:[function(require,module,exports) {
+},{}],91:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2480,7 +2480,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":62}],11:[function(require,module,exports) {
+},{"./camelize":92}],20:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.development.js
  *
@@ -17838,7 +17838,7 @@ if ('development' !== "production") {
     module.exports = reactDom;
   })();
 }
-},{"react":7,"fbjs/lib/invariant":56,"fbjs/lib/warning":57,"fbjs/lib/ExecutionEnvironment":49,"object-assign":33,"fbjs/lib/emptyFunction":50,"fbjs/lib/EventListener":51,"fbjs/lib/getActiveElement":52,"fbjs/lib/shallowEqual":53,"fbjs/lib/containsNode":55,"fbjs/lib/focusNode":54,"fbjs/lib/emptyObject":48,"prop-types/checkPropTypes":34,"fbjs/lib/hyphenateStyleName":58,"fbjs/lib/camelizeStyleName":59}],8:[function(require,module,exports) {
+},{"react":8,"fbjs/lib/invariant":66,"fbjs/lib/warning":67,"fbjs/lib/ExecutionEnvironment":47,"object-assign":43,"fbjs/lib/emptyFunction":50,"fbjs/lib/EventListener":51,"fbjs/lib/getActiveElement":48,"fbjs/lib/shallowEqual":49,"fbjs/lib/containsNode":52,"fbjs/lib/focusNode":53,"fbjs/lib/emptyObject":54,"prop-types/checkPropTypes":64,"fbjs/lib/hyphenateStyleName":90,"fbjs/lib/camelizeStyleName":91}],9:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -17874,7 +17874,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.production.min.js":12,"./cjs/react-dom.development.js":11}],18:[function(require,module,exports) {
+},{"./cjs/react-dom.production.min.js":17,"./cjs/react-dom.development.js":20}],28:[function(require,module,exports) {
 "use strict";
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -17907,7 +17907,7 @@ function _interopDefault(e) {
   return e === t;
 },
     setConfig = function () {};exports.AppContainer = AppContainer, exports.hot = hot_prod, exports.areComponentsEqual = areComponentsEqual, exports.setConfig = setConfig;
-},{"react":7}],42:[function(require,module,exports) {
+},{"react":8}],56:[function(require,module,exports) {
 module.exports = function shallowEqual(objA, objB, compare, compareContext) {
 
     var ret = compare ? compare.call(compareContext, objA, objB) : void 0;
@@ -17959,7 +17959,7 @@ module.exports = function shallowEqual(objA, objB, compare, compareContext) {
 
 };
 
-},{}],41:[function(require,module,exports) {
+},{}],55:[function(require,module,exports) {
 (function() {
   'use strict';
   
@@ -18097,7 +18097,7 @@ module.exports = function shallowEqual(objA, objB, compare, compareContext) {
 }());
 
 
-},{}],45:[function(require,module,exports) {
+},{}],61:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -18614,7 +18614,7 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 
   return ReactPropTypes;
 };
-},{"fbjs/lib/emptyFunction":50,"fbjs/lib/invariant":56,"fbjs/lib/warning":57,"object-assign":33,"./lib/ReactPropTypesSecret":36,"./checkPropTypes":34}],44:[function(require,module,exports) {
+},{"fbjs/lib/emptyFunction":50,"fbjs/lib/invariant":66,"fbjs/lib/warning":67,"object-assign":43,"./lib/ReactPropTypesSecret":65,"./checkPropTypes":64}],62:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -18674,7 +18674,7 @@ module.exports = function() {
   return ReactPropTypes;
 };
 
-},{"fbjs/lib/emptyFunction":50,"fbjs/lib/invariant":56,"./lib/ReactPropTypesSecret":36}],40:[function(require,module,exports) {
+},{"fbjs/lib/emptyFunction":50,"fbjs/lib/invariant":66,"./lib/ReactPropTypesSecret":65}],58:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -18698,7 +18698,7 @@ if ('development' !== 'production') {
   // http://fb.me/prop-types-in-prod
   module.exports = require('./factoryWithThrowingShims')();
 }
-},{"./factoryWithTypeCheckers":45,"./factoryWithThrowingShims":44}],43:[function(require,module,exports) {
+},{"./factoryWithTypeCheckers":61,"./factoryWithThrowingShims":62}],57:[function(require,module,exports) {
 var global = (1,eval)("this");
 /**
  * Copyright 2015, Yahoo! Inc.
@@ -18773,7 +18773,7 @@ var global = (1,eval)("this");
     };
 })));
 
-},{}],19:[function(require,module,exports) {
+},{}],29:[function(require,module,exports) {
 'use strict';
 
 var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -20213,7 +20213,7 @@ exports.enterModule = enter;
 exports.leaveModule = leave;
 exports.areComponentsEqual = areComponentsEqual;
 exports.setConfig = setConfig;
-},{"react":7,"shallowequal":42,"fast-levenshtein":41,"prop-types":40,"hoist-non-react-statics":43}],15:[function(require,module,exports) {
+},{"react":8,"shallowequal":56,"fast-levenshtein":55,"prop-types":58,"hoist-non-react-statics":57}],25:[function(require,module,exports) {
 'use strict';
 
 if (!module.hot || 'development' === 'production') {
@@ -20221,7 +20221,7 @@ if (!module.hot || 'development' === 'production') {
 } else {
   module.exports = require('./dist/react-hot-loader.development.js');
 }
-},{"./dist/react-hot-loader.production.min.js":18,"./dist/react-hot-loader.development.js":19}],46:[function(require,module,exports) {
+},{"./dist/react-hot-loader.production.min.js":28,"./dist/react-hot-loader.development.js":29}],75:[function(require,module,exports) {
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -20275,7 +20275,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = warning;
-},{}],47:[function(require,module,exports) {
+},{}],59:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -20322,7 +20322,7 @@ var invariant = function (condition, format, a, b, c, d, e, f) {
 };
 
 module.exports = invariant;
-},{}],80:[function(require,module,exports) {
+},{}],88:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -20398,7 +20398,7 @@ function resolvePathname(to) {
 }
 
 exports.default = resolvePathname;
-},{}],81:[function(require,module,exports) {
+},{}],87:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -20446,7 +20446,7 @@ function valueEqual(a, b) {
 }
 
 exports.default = valueEqual;
-},{}],66:[function(require,module,exports) {
+},{}],77:[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -20508,7 +20508,7 @@ var createPath = exports.createPath = function createPath(location) {
 
   return path;
 };
-},{}],67:[function(require,module,exports) {
+},{}],101:[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -20587,7 +20587,7 @@ var createLocation = exports.createLocation = function createLocation(path, stat
 var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a, b) {
   return a.pathname === b.pathname && a.search === b.search && a.hash === b.hash && a.key === b.key && (0, _valueEqual2.default)(a.state, b.state);
 };
-},{"resolve-pathname":80,"value-equal":81,"./PathUtils":66}],69:[function(require,module,exports) {
+},{"resolve-pathname":88,"value-equal":87,"./PathUtils":77}],102:[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -20673,7 +20673,7 @@ var createTransitionManager = function createTransitionManager() {
 };
 
 exports.default = createTransitionManager;
-},{"warning":46}],68:[function(require,module,exports) {
+},{"warning":75}],103:[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -20729,7 +20729,7 @@ var supportsGoWithoutReloadUsingHash = exports.supportsGoWithoutReloadUsingHash 
 var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
   return event.state === undefined && navigator.userAgent.indexOf('CriOS') === -1;
 };
-},{}],64:[function(require,module,exports) {
+},{}],97:[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -21037,7 +21037,7 @@ var createBrowserHistory = function createBrowserHistory() {
 };
 
 exports.default = createBrowserHistory;
-},{"warning":46,"invariant":47,"./LocationUtils":67,"./PathUtils":66,"./createTransitionManager":69,"./DOMUtils":68}],76:[function(require,module,exports) {
+},{"warning":75,"invariant":59,"./LocationUtils":101,"./PathUtils":77,"./createTransitionManager":102,"./DOMUtils":103}],70:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21180,7 +21180,7 @@ Router.childContextTypes = {
 };
 
 exports.default = Router;
-},{"warning":46,"invariant":47,"react":7,"prop-types":40}],28:[function(require,module,exports) {
+},{"warning":75,"invariant":59,"react":8,"prop-types":58}],38:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21194,7 +21194,7 @@ var _Router2 = _interopRequireDefault(_Router);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Router2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Router":76}],20:[function(require,module,exports) {
+},{"react-router/es/Router":70}],32:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21280,7 +21280,7 @@ BrowserRouter.propTypes = {
 };
 
 exports.default = BrowserRouter;
-},{"warning":46,"react":7,"prop-types":40,"history/createBrowserHistory":64,"./Router":28}],65:[function(require,module,exports) {
+},{"warning":75,"react":8,"prop-types":58,"history/createBrowserHistory":97,"./Router":38}],99:[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -21605,7 +21605,7 @@ var createHashHistory = function createHashHistory() {
 };
 
 exports.default = createHashHistory;
-},{"warning":46,"invariant":47,"./LocationUtils":67,"./PathUtils":66,"./createTransitionManager":69,"./DOMUtils":68}],21:[function(require,module,exports) {
+},{"warning":75,"invariant":59,"./LocationUtils":101,"./PathUtils":77,"./createTransitionManager":102,"./DOMUtils":103}],34:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21690,7 +21690,7 @@ HashRouter.propTypes = {
 };
 
 exports.default = HashRouter;
-},{"warning":46,"react":7,"prop-types":40,"history/createHashHistory":65,"./Router":28}],22:[function(require,module,exports) {
+},{"warning":75,"react":8,"prop-types":58,"history/createHashHistory":99,"./Router":38}],31:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21827,7 +21827,7 @@ Link.contextTypes = {
 };
 
 exports.default = Link;
-},{"react":7,"prop-types":40,"invariant":47}],91:[function(require,module,exports) {
+},{"react":8,"prop-types":58,"invariant":59}],106:[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -21998,7 +21998,7 @@ var createMemoryHistory = function createMemoryHistory() {
 };
 
 exports.default = createMemoryHistory;
-},{"warning":46,"./PathUtils":66,"./LocationUtils":67,"./createTransitionManager":69}],71:[function(require,module,exports) {
+},{"warning":75,"./PathUtils":77,"./LocationUtils":101,"./createTransitionManager":102}],104:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22084,7 +22084,7 @@ MemoryRouter.propTypes = {
 };
 
 exports.default = MemoryRouter;
-},{"warning":46,"react":7,"prop-types":40,"history/createMemoryHistory":91,"./Router":76}],23:[function(require,module,exports) {
+},{"warning":75,"react":8,"prop-types":58,"history/createMemoryHistory":106,"./Router":70}],30:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22098,12 +22098,12 @@ var _MemoryRouter2 = _interopRequireDefault(_MemoryRouter);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _MemoryRouter2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/MemoryRouter":71}],92:[function(require,module,exports) {
+},{"react-router/es/MemoryRouter":104}],80:[function(require,module,exports) {
 module.exports = Array.isArray || function (arr) {
   return Object.prototype.toString.call(arr) == '[object Array]';
 };
 
-},{}],83:[function(require,module,exports) {
+},{}],78:[function(require,module,exports) {
 var isarray = require('isarray')
 
 /**
@@ -22531,7 +22531,7 @@ function pathToRegexp (path, keys, options) {
   return stringToRegexp(/** @type {string} */ (path), /** @type {!Array} */ (keys), options)
 }
 
-},{"isarray":92}],77:[function(require,module,exports) {
+},{"isarray":80}],72:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22611,7 +22611,7 @@ var matchPath = function matchPath(pathname) {
 };
 
 exports.default = matchPath;
-},{"path-to-regexp":83}],72:[function(require,module,exports) {
+},{"path-to-regexp":78}],79:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22787,7 +22787,7 @@ Route.childContextTypes = {
 };
 
 exports.default = Route;
-},{"warning":46,"invariant":47,"react":7,"prop-types":40,"./matchPath":77}],27:[function(require,module,exports) {
+},{"warning":75,"invariant":59,"react":8,"prop-types":58,"./matchPath":72}],36:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22801,7 +22801,7 @@ var _Route2 = _interopRequireDefault(_Route);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Route2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Route":72}],24:[function(require,module,exports) {
+},{"react-router/es/Route":79}],33:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22906,7 +22906,7 @@ NavLink.defaultProps = {
 };
 
 exports.default = NavLink;
-},{"react":7,"prop-types":40,"./Route":27,"./Link":22}],73:[function(require,module,exports) {
+},{"react":8,"prop-types":58,"./Route":36,"./Link":31}],68:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23013,7 +23013,7 @@ Prompt.contextTypes = {
 };
 
 exports.default = Prompt;
-},{"react":7,"prop-types":40,"invariant":47}],25:[function(require,module,exports) {
+},{"react":8,"prop-types":58,"invariant":59}],35:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -23027,7 +23027,7 @@ var _Prompt2 = _interopRequireDefault(_Prompt);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Prompt2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Prompt":73}],88:[function(require,module,exports) {
+},{"react-router/es/Prompt":68}],85:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -23090,7 +23090,7 @@ var createPath = exports.createPath = function createPath(location) {
 
   return path;
 };
-},{}],87:[function(require,module,exports) {
+},{}],82:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -23179,7 +23179,7 @@ var createLocation = exports.createLocation = function createLocation(path, stat
 var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a, b) {
   return a.pathname === b.pathname && a.search === b.search && a.hash === b.hash && a.key === b.key && (0, _valueEqual2.default)(a.state, b.state);
 };
-},{"resolve-pathname":80,"value-equal":81,"./PathUtils":88}],89:[function(require,module,exports) {
+},{"resolve-pathname":88,"value-equal":87,"./PathUtils":85}],86:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -23267,7 +23267,7 @@ var createTransitionManager = function createTransitionManager() {
 };
 
 exports.default = createTransitionManager;
-},{"warning":46}],90:[function(require,module,exports) {
+},{"warning":75}],89:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -23644,7 +23644,7 @@ var createBrowserHistory = function createBrowserHistory() {
 };
 
 exports.default = createBrowserHistory;
-},{"warning":46,"invariant":47,"./LocationUtils":87,"./PathUtils":88,"./createTransitionManager":89,"./DOMUtils":90}],85:[function(require,module,exports) {
+},{"warning":75,"invariant":59,"./LocationUtils":82,"./PathUtils":85,"./createTransitionManager":86,"./DOMUtils":89}],83:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -23978,7 +23978,7 @@ var createHashHistory = function createHashHistory() {
 };
 
 exports.default = createHashHistory;
-},{"warning":46,"invariant":47,"./LocationUtils":87,"./PathUtils":88,"./createTransitionManager":89,"./DOMUtils":90}],86:[function(require,module,exports) {
+},{"warning":75,"invariant":59,"./LocationUtils":82,"./PathUtils":85,"./createTransitionManager":86,"./DOMUtils":89}],81:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24162,7 +24162,7 @@ var createMemoryHistory = function createMemoryHistory() {
 };
 
 exports.default = createMemoryHistory;
-},{"warning":46,"./PathUtils":88,"./LocationUtils":87,"./createTransitionManager":89}],82:[function(require,module,exports) {
+},{"warning":75,"./PathUtils":85,"./LocationUtils":82,"./createTransitionManager":86}],76:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24217,7 +24217,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.createBrowserHistory = _createBrowserHistory3.default;
 exports.createHashHistory = _createHashHistory3.default;
 exports.createMemoryHistory = _createMemoryHistory3.default;
-},{"./createBrowserHistory":84,"./createHashHistory":85,"./createMemoryHistory":86,"./LocationUtils":87,"./PathUtils":88}],74:[function(require,module,exports) {
+},{"./createBrowserHistory":84,"./createHashHistory":83,"./createMemoryHistory":81,"./LocationUtils":82,"./PathUtils":85}],69:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24341,7 +24341,7 @@ Redirect.contextTypes = {
 };
 
 exports.default = Redirect;
-},{"react":7,"prop-types":40,"warning":46,"invariant":47,"history":82}],26:[function(require,module,exports) {
+},{"react":8,"prop-types":58,"warning":75,"invariant":59,"history":76}],37:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24355,7 +24355,7 @@ var _Redirect2 = _interopRequireDefault(_Redirect);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Redirect2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Redirect":74}],75:[function(require,module,exports) {
+},{"react-router/es/Redirect":69}],71:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24567,7 +24567,7 @@ StaticRouter.childContextTypes = {
 };
 
 exports.default = StaticRouter;
-},{"warning":46,"invariant":47,"react":7,"prop-types":40,"history/PathUtils":66,"./Router":76}],29:[function(require,module,exports) {
+},{"warning":75,"invariant":59,"react":8,"prop-types":58,"history/PathUtils":77,"./Router":70}],39:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24581,7 +24581,7 @@ var _StaticRouter2 = _interopRequireDefault(_StaticRouter);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _StaticRouter2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/StaticRouter":75}],79:[function(require,module,exports) {
+},{"react-router/es/StaticRouter":71}],74:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24694,7 +24694,7 @@ Switch.propTypes = {
 };
 
 exports.default = Switch;
-},{"react":7,"prop-types":40,"warning":46,"invariant":47,"./matchPath":77}],30:[function(require,module,exports) {
+},{"react":8,"prop-types":58,"warning":75,"invariant":59,"./matchPath":72}],42:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24708,7 +24708,7 @@ var _Switch2 = _interopRequireDefault(_Switch);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Switch2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Switch":79}],31:[function(require,module,exports) {
+},{"react-router/es/Switch":74}],40:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24722,7 +24722,7 @@ var _matchPath2 = _interopRequireDefault(_matchPath);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _matchPath2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/matchPath":77}],78:[function(require,module,exports) {
+},{"react-router/es/matchPath":72}],73:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24786,7 +24786,7 @@ var withRouter = function withRouter(Component) {
 };
 
 exports.default = withRouter;
-},{"react":7,"prop-types":40,"hoist-non-react-statics":43,"./Route":72}],32:[function(require,module,exports) {
+},{"react":8,"prop-types":58,"hoist-non-react-statics":57,"./Route":79}],41:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24800,7 +24800,7 @@ var _withRouter2 = _interopRequireDefault(_withRouter);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _withRouter2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/withRouter":78}],16:[function(require,module,exports) {
+},{"react-router/es/withRouter":73}],27:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24875,11 +24875,89 @@ exports.StaticRouter = _StaticRouter3.default;
 exports.Switch = _Switch3.default;
 exports.matchPath = _matchPath3.default;
 exports.withRouter = _withRouter3.default;
-},{"./BrowserRouter":20,"./HashRouter":21,"./Link":22,"./MemoryRouter":23,"./NavLink":24,"./Prompt":25,"./Redirect":26,"./Route":27,"./Router":28,"./StaticRouter":29,"./Switch":30,"./matchPath":31,"./withRouter":32}],5:[function(require,module,exports) {
-module.exports="/dist/401c96b65f5c599e391cf0f1c995eeb6.png";
-},{}],6:[function(require,module,exports) {
-module.exports="/dist/63ee1a2b96c051c1f732342c6be19c24.png";
-},{}],70:[function(require,module,exports) {
+},{"./BrowserRouter":32,"./HashRouter":34,"./Link":31,"./MemoryRouter":30,"./NavLink":33,"./Prompt":35,"./Redirect":37,"./Route":36,"./Router":38,"./StaticRouter":39,"./Switch":42,"./matchPath":40,"./withRouter":41}],12:[function(require,module,exports) {
+(function () {
+  var enterModule = require('react-hot-loader').enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+var images = {
+
+  "class-individual": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-individual.jpg?alt=media",
+  "class-life": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-life.jpg?alt=media",
+  "class-work": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-work.jpg?alt=media",
+  "contactusbanner": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/contactusbanner.jpg?alt=media",
+  "englishClassesCorporate1": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesCorporate1.jpg?alt=media",
+  "englishClassesCorporate2": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesCorporate2.jpg?alt=media",
+  "englishClassesExams1": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesExams1.jpg?alt=media",
+  "englishClassesExams2": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesExams2.jpg?alt=media",
+  "englishClassesHome1": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesHome1.jpg?alt=media",
+  "englishClassesHome2": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesHome2.jpg?alt=media",
+  "englishClassesHome3": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesHome3.jpg?alt=media",
+  "englishClassesIndividual1": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesIndividual1.jpg?alt=media",
+  "englishClassesIndividual2": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesIndividual2.jpg?alt=media",
+  "englishClassesLife1": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesLife1.jpg?alt=media",
+  "englishClassesLife2": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesLife2.jpg?alt=media",
+  "englishClassesStudyAbroad1": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesStudyAbroad1.jpg?alt=media",
+  "englishClassesStudyAbroad2": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesStudyAbroad2.jpg?alt=media",
+  "englishClassesStudyAbroad3": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesStudyAbroad3.jpg?alt=media",
+  "englishClassesStudyAbroad4": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesStudyAbroad4.jpg?alt=media",
+  "englishClassesStudyAbroad5": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesStudyAbroad5.jpg?alt=media",
+  "englishClassesStudyAbroad6": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesStudyAbroad6.jpg?alt=media",
+  "englishClassesStudyAbroad7": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesStudyAbroad7.jpg?alt=media",
+  "englishClassesStudyAbroad8": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesStudyAbroad8.jpg?alt=media",
+  "englishClassesStudyAbroad9": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesStudyAbroad9.jpg?alt=media",
+  "englishClassesStudyAbroad10": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesStudyAbroad10.jpg?alt=media",
+  "englishClassesStudyAbroad11": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesStudyAbroad11.jpg?alt=media",
+  "englishClassesWork1": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesWork1.jpg?alt=media",
+  "englishClassesWork2": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/englishClassesWork2.jpg?alt=media",
+  "gallary1": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/gallary1.jpg?alt=media",
+  "gallary2": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/gallary2.jpg?alt=media",
+  "gallary3": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/gallary3.jpg?alt=media",
+  "gallary4": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/gallary4.jpg?alt=media",
+  "gallary5": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/gallary5.jpg?alt=media",
+  "mainClassImage": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/mainClassImage.jpg?alt=media",
+  "mainPageImage": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/mainPageImage.jpg?alt=media",
+  "ourSchool1": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/ourSchool1.jpg?alt=media",
+  "ourSchool2": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/ourSchool2.jpg?alt=media",
+  "ourSchool3": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/ourSchool3.jpg?alt=media",
+  "ourSchool4": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/ourSchool4.jpg?alt=media",
+  "ourSchool5": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/ourSchool5.jpg?alt=media",
+  "ourSchool6": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/ourSchool6.jpg?alt=media",
+  "ourSchool7": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/ourSchool7.jpg?alt=media",
+  "ourSchool8": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/ourSchool8.jpg?alt=media",
+  "ourSchool9": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/ourSchool9.jpg?alt=media",
+  "qTeachers": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/qTeachers.jpg?alt=media",
+  "talkToUs": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/talkToUs.jpg?alt=media",
+  "cambridgeLogo": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/cambridgeLogo.png?alt=media",
+  "cambridgeUni": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/cambridgeUni.png?alt=media",
+  "ccilogo": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/ccilogo.png?alt=media",
+  "class-abroad": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-abroad.jpg?alt=media",
+  "class-corporate": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-corporate.jpg?alt=media",
+  "class-exams": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-exams.jpg?alt=media",
+  "class-home": "https://firebasestorage.googleapis.com/v0/b/ccienglish-7a2f3.appspot.com/o/class-home.jpg?alt=media"
+
+};
+
+module.exports = images;
+;
+
+(function () {
+  var reactHotLoader = require('react-hot-loader').default;
+
+  var leaveModule = require('react-hot-loader').leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(images, "images", "C:/Users/Jason/Desktop/CCIv2/src/components/images.js");
+  leaveModule(module);
+})();
+
+;
+},{"react-hot-loader":25}],105:[function(require,module,exports) {
 /*!
  * isobject <https://github.com/jonschlinkert/isobject>
  *
@@ -24893,7 +24971,7 @@ module.exports = function isObject(val) {
   return val != null && typeof val === 'object' && Array.isArray(val) === false;
 };
 
-},{}],37:[function(require,module,exports) {
+},{}],96:[function(require,module,exports) {
 /*!
  * is-plain-object <https://github.com/jonschlinkert/is-plain-object>
  *
@@ -24932,7 +25010,7 @@ module.exports = function isPlainObject(o) {
   return true;
 };
 
-},{"isobject":70}],38:[function(require,module,exports) {
+},{"isobject":105}],94:[function(require,module,exports) {
 /*
  *          __        ___
  *    _____/ /___  __/ (_)____
@@ -26558,7 +26636,7 @@ module.exports = function isPlainObject(o) {
 	return stylis
 }));
 
-},{}],39:[function(require,module,exports) {
+},{}],95:[function(require,module,exports) {
 (function (factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? (module['exports'] = factory()) :
 		typeof define === 'function' && define['amd'] ? define(factory()) :
@@ -26608,7 +26686,7 @@ module.exports = function isPlainObject(o) {
 	}
 }))
 
-},{}],35:[function(require,module,exports) {
+},{}],93:[function(require,module,exports) {
 /**
  * Copyright 2015, Yahoo! Inc.
  * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
@@ -26660,7 +26738,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
     return targetComponent;
 };
 
-},{}],17:[function(require,module,exports) {
+},{}],26:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -28872,7 +28950,932 @@ exports.StyleSheetManager = StyleSheetManager;
 exports.__DO_NOT_USE_OR_YOU_WILL_BE_HAUNTED_BY_SPOOKY_GHOSTS = __DO_NOT_USE_OR_YOU_WILL_BE_HAUNTED_BY_SPOOKY_GHOSTS;
 exports.default = styled;
 //# sourceMappingURL=styled-components.browser.es.js.map
-},{"is-plain-object":37,"stylis":38,"stylis-rule-sheet":39,"react":7,"prop-types":40,"hoist-non-react-statics":35}],14:[function(require,module,exports) {
+},{"is-plain-object":96,"stylis":94,"stylis-rule-sheet":95,"react":8,"prop-types":58,"hoist-non-react-statics":93}],21:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _templateObject = _taggedTemplateLiteral(['', ''], ['', '']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  padding-top: 30px;\n  display:grid;\n  grid-template-columns: auto;\n  grid-area: main-story-left;\n\n'], ['\n  padding-top: 30px;\n  display:grid;\n  grid-template-columns: auto;\n  grid-area: main-story-left;\n\n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n  display:grid;\n  grid-gap:10px;\n  align-content: space-between;\n  justify-content: space-around;\n  grid-template-columns: repeat(auto-fill, 140px);\n'], ['\n  display:grid;\n  grid-gap:10px;\n  align-content: space-between;\n  justify-content: space-around;\n  grid-template-columns: repeat(auto-fill, 140px);\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n  padding: 10px;\n  grid-auto-columns: auto;\n  grid-area: main-story-right;\n'], ['\n  padding: 10px;\n  grid-auto-columns: auto;\n  grid-area: main-story-right;\n']),
+    _templateObject5 = _taggedTemplateLiteral(['\n  background: #a2c534;\n  padding: 10px;\n  text-align: center;\n  width:50%;\n  margin: 0 auto;\n  box-shadow: 1px 1px 1px #999;\n  &:hover {\n  color:white;\n  background: #b7d753;\n  cursor: pointer;\n}\n'], ['\n  background: #a2c534;\n  padding: 10px;\n  text-align: center;\n  width:50%;\n  margin: 0 auto;\n  box-shadow: 1px 1px 1px #999;\n  &:hover {\n  color:white;\n  background: #b7d753;\n  cursor: pointer;\n}\n']),
+    _templateObject6 = _taggedTemplateLiteral(['\n   justify-self: center;\n   @media (max-width: 599px) {\n    width: 95px;\n   }\n   @media (min-width: 600px) {\n    width: 120px;\n   }\n   @media (min-width: 900px) {\n    width: 140px;\n   }\n   @media (min-width: 1200px) {}\n   @media (min-width: 1800px) {}\n   width: 150px;\n'], ['\n   justify-self: center;\n   @media (max-width: 599px) {\n    width: 95px;\n   }\n   @media (min-width: 600px) {\n    width: 120px;\n   }\n   @media (min-width: 900px) {\n    width: 140px;\n   }\n   @media (min-width: 1200px) {}\n   @media (min-width: 1800px) {}\n   width: 150px;\n']),
+    _templateObject7 = _taggedTemplateLiteral(['\n  font-family: \'Rubik\', sans-serif;\n  color: #717070;\n  font-weight: lighter !important;\n  letter-spacing: 1px;\n  line-height: 27px;\n'], ['\n  font-family: \'Rubik\', sans-serif;\n  color: #717070;\n  font-weight: lighter !important;\n  letter-spacing: 1px;\n  line-height: 27px;\n']),
+    _templateObject8 = _taggedTemplateLiteral(['', ' background: ', ';'], ['', ' background: ', ';']);
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _styledComponents = require('styled-components');
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(function () {
+  var enterModule = require('react-hot-loader').enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var wrapperStyle = '\n\n@media (max-width: 599px) {\n    display: grid;\n    grid-gap: 5px;\n    grid-template-areas: \n      "main-story-right"\n      "main-story-left"       \n}\n/*for-tablet-portrait-up*/\n\n@media (min-width: 600px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-areas: \n      "main-story-left main-story-right"\n      \n}\n@media (min-width: 900px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-columns: 50% 50%\n}\n\n  margin-top: 10px;\n  border-radius: 1p;\n  padding: 20px;\n';
+
+var Wrapper = _styledComponents2.default.div(_templateObject, wrapperStyle);
+
+var Left = _styledComponents2.default.div(_templateObject2);
+
+var PictureGallary = _styledComponents2.default.div(_templateObject3);
+
+var Right = _styledComponents2.default.div(_templateObject4);
+
+var Btn = _styledComponents2.default.div(_templateObject5);
+
+var PartyPics = (0, _styledComponents2.default)('img')(_templateObject6);
+
+var Paragraph = _styledComponents2.default.p(_templateObject7);
+
+var PictureGallaryText = function (_React$Component) {
+  _inherits(PictureGallaryText, _React$Component);
+
+  function PictureGallaryText(props) {
+    _classCallCheck(this, PictureGallaryText);
+
+    var _this = _possibleConstructorReturn(this, (PictureGallaryText.__proto__ || Object.getPrototypeOf(PictureGallaryText)).call(this));
+
+    _this.state = {};
+    return _this;
+  }
+
+  _createClass(PictureGallaryText, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      Wrapper = _styledComponents2.default.div(_templateObject8, wrapperStyle, this.props.data.background);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+
+      return _react2.default.createElement(
+        Wrapper,
+        null,
+        _react2.default.createElement(
+          Left,
+          null,
+          _react2.default.createElement(
+            PictureGallary,
+            null,
+            this.props.data.pictures.map(function (pic, index) {
+              return _react2.default.createElement(PartyPics, { key: index + '-pics', src: pic, alt: 'random picture' });
+            })
+          ),
+          _react2.default.createElement(
+            Paragraph,
+            { className: 'caption' },
+            this.props.data.caption
+          )
+        ),
+        _react2.default.createElement(
+          Right,
+          null,
+          _react2.default.createElement(
+            'h1',
+            { style: { textAlign: 'center' } },
+            this.props.data.title
+          ),
+          _react2.default.createElement(
+            'div',
+            null,
+            this.props.data.paragraphs.map(function (text, index) {
+              return _react2.default.createElement(
+                Paragraph,
+                { key: index + '-text' },
+                text
+              );
+            })
+          ),
+          _react2.default.createElement(
+            Btn,
+            null,
+            this.props.data.buttonText
+          )
+        )
+      );
+    }
+  }, {
+    key: '__reactstandin__regenerateByEval',
+    value: function __reactstandin__regenerateByEval(key, code) {
+      this[key] = eval(code);
+    }
+  }]);
+
+  return PictureGallaryText;
+}(_react2.default.Component);
+
+var _default = PictureGallaryText;
+exports.default = _default;
+;
+
+(function () {
+  var reactHotLoader = require('react-hot-loader').default;
+
+  var leaveModule = require('react-hot-loader').leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(wrapperStyle, 'wrapperStyle', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureGallaryText.jsx');
+  reactHotLoader.register(Wrapper, 'Wrapper', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureGallaryText.jsx');
+  reactHotLoader.register(Left, 'Left', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureGallaryText.jsx');
+  reactHotLoader.register(PictureGallary, 'PictureGallary', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureGallaryText.jsx');
+  reactHotLoader.register(Right, 'Right', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureGallaryText.jsx');
+  reactHotLoader.register(Btn, 'Btn', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureGallaryText.jsx');
+  reactHotLoader.register(PartyPics, 'PartyPics', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureGallaryText.jsx');
+  reactHotLoader.register(Paragraph, 'Paragraph', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureGallaryText.jsx');
+  reactHotLoader.register(PictureGallaryText, 'PictureGallaryText', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureGallaryText.jsx');
+  reactHotLoader.register(_default, 'default', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureGallaryText.jsx');
+  leaveModule(module);
+})();
+
+;
+},{"react-hot-loader":25,"react":8,"styled-components":26}],46:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _templateObject = _taggedTemplateLiteral(['\n  text-decoration: none;\n  background: #a2c534;\n  padding: 10px;\n  text-align: center;\n  width: 200px;\n  margin: 0 auto;\n  box-shadow: 1px 1px 1px #999;\n  &:hover {\n  color:white;\n  background: #b7d753;\n  cursor: pointer;\n}\n'], ['\n  text-decoration: none;\n  background: #a2c534;\n  padding: 10px;\n  text-align: center;\n  width: 200px;\n  margin: 0 auto;\n  box-shadow: 1px 1px 1px #999;\n  &:hover {\n  color:white;\n  background: #b7d753;\n  cursor: pointer;\n}\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  text-decoration: none;\n'], ['\n  text-decoration: none;\n']);
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _styledComponents = require('styled-components');
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(function () {
+  var enterModule = require('react-hot-loader').enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Btn = _styledComponents2.default.div(_templateObject);
+
+var StyledLink = _styledComponents2.default.div(_templateObject2);
+
+//Meet our team = homepage
+//Contact us about classes = contactcci
+//Schedule your meeting = contactcci
+//Contact an advisor = contactcci
+
+
+var GreenButton = function (_React$Component) {
+  _inherits(GreenButton, _React$Component);
+
+  function GreenButton(props) {
+    _classCallCheck(this, GreenButton);
+
+    return _possibleConstructorReturn(this, (GreenButton.__proto__ || Object.getPrototypeOf(GreenButton)).call(this, props));
+  }
+
+  _createClass(GreenButton, [{
+    key: 'render',
+    value: function render() {
+      var to = '/';
+      if (this.props.text === 'Meet our team') {
+        to = '/our-school';
+      } else {
+        to = '/contactcci';
+      }
+
+      return _react2.default.createElement(
+        StyledLink,
+        { to: to },
+        _react2.default.createElement(
+          Btn,
+          null,
+          this.props.text
+        )
+      );
+    }
+  }, {
+    key: '__reactstandin__regenerateByEval',
+    value: function __reactstandin__regenerateByEval(key, code) {
+      this[key] = eval(code);
+    }
+  }]);
+
+  return GreenButton;
+}(_react2.default.Component);
+
+var _default = GreenButton;
+exports.default = _default;
+;
+
+(function () {
+  var reactHotLoader = require('react-hot-loader').default;
+
+  var leaveModule = require('react-hot-loader').leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(Btn, 'Btn', 'C:/Users/Jason/Desktop/CCIv2/src/components/GreenButton.jsx');
+  reactHotLoader.register(StyledLink, 'StyledLink', 'C:/Users/Jason/Desktop/CCIv2/src/components/GreenButton.jsx');
+  reactHotLoader.register(GreenButton, 'GreenButton', 'C:/Users/Jason/Desktop/CCIv2/src/components/GreenButton.jsx');
+  reactHotLoader.register(_default, 'default', 'C:/Users/Jason/Desktop/CCIv2/src/components/GreenButton.jsx');
+  leaveModule(module);
+})();
+
+;
+},{"react-hot-loader":25,"react":8,"styled-components":26}],45:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _templateObject = _taggedTemplateLiteral(['', ''], ['', '']),
+    _templateObject2 = _taggedTemplateLiteral([''], ['']),
+    _templateObject3 = _taggedTemplateLiteral(['\n  width: 100%;\n'], ['\n  width: 100%;\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n  padding-left: 10px;\n  padding-right: 10px;\n  font-family: \'Rubik\', sans-serif;\n  color: #717070;\n  font-weight: lighter !important;\n  letter-spacing: 1px;\n  line-height: 27px;\n'], ['\n  padding-left: 10px;\n  padding-right: 10px;\n  font-family: \'Rubik\', sans-serif;\n  color: #717070;\n  font-weight: lighter !important;\n  letter-spacing: 1px;\n  line-height: 27px;\n']),
+    _templateObject5 = _taggedTemplateLiteral(['\n       padding: 20px;\n       grid-auto-columns: auto;\n       grid-area: cam-', ';\n    '], ['\n       padding: 20px;\n       grid-auto-columns: auto;\n       grid-area: cam-', ';\n    ']),
+    _templateObject6 = _taggedTemplateLiteral(['\n      align-self : center;\n      grid-auto-columns: auto;\n      grid-area: cam-', '\n    '], ['\n      align-self : center;\n      grid-auto-columns: auto;\n      grid-area: cam-', '\n    ']),
+    _templateObject7 = _taggedTemplateLiteral(['', ' background:', ';'], ['', ' background:', ';']);
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _styledComponents = require('styled-components');
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _images = require('./images.js');
+
+var _images2 = _interopRequireDefault(_images);
+
+var _GreenButton = require('./GreenButton.jsx');
+
+var _GreenButton2 = _interopRequireDefault(_GreenButton);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(function () {
+  var enterModule = require('react-hot-loader').enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var wrapperStyle = '\n\n\n\n@media (max-width: 599px) {\n    display: grid;\n    grid-gap: 5px;\n    grid-template-areas: \n      "cam-left"\n      "cam-right"       \n}\n/*for-tablet-portrait-up*/\n\n@media (min-width: 600px) {\n    align-content: space-between;\n  justify-content: space-around;\n    display: grid;\n    grid-gap: 2px;\n    grid-template-areas: \n      "cam-left" \n      "cam-right"\n}\n/*for-tablet-landscape-up*/\n\n@media (min-width: 900px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-columns: 50% 50%;\n}\n/*for-desktop-up*/\n\n@media (min-width: 1200px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-areas: \n      "cam-left cam-right"\n}\n/*for-big-desktop-up*/\n\n@media (min-width: 1800px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-areas: \n      "cam-left cam-right"\n}\n  margin-top: 10px;\n  padding: 20px;\n';
+
+var Wrapper = _styledComponents2.default.div(_templateObject, wrapperStyle);
+var PictureBlock = _styledComponents2.default.div(_templateObject2);
+var TextBlock = _styledComponents2.default.div(_templateObject2);
+
+var Pic = (0, _styledComponents2.default)('img')(_templateObject3);
+
+var Paragraph = _styledComponents2.default.p(_templateObject4);
+
+var PictureLeftTextRight = function (_React$Component) {
+  _inherits(PictureLeftTextRight, _React$Component);
+
+  function PictureLeftTextRight(props) {
+    _classCallCheck(this, PictureLeftTextRight);
+
+    return _possibleConstructorReturn(this, (PictureLeftTextRight.__proto__ || Object.getPrototypeOf(PictureLeftTextRight)).call(this));
+  }
+
+  _createClass(PictureLeftTextRight, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      var format = this.props.data.format;
+      TextBlock = _styledComponents2.default.div(_templateObject5, format[0]);
+
+      PictureBlock = _styledComponents2.default.div(_templateObject6, format[1]);
+      Wrapper = _styledComponents2.default.div(_templateObject7, wrapperStyle, this.props.data.background);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var left = _react2.default.createElement(
+        PictureBlock,
+        null,
+        _react2.default.createElement(Pic, { src: this.props.picture, alt: 'cambridge University' })
+      );
+
+      var right = _react2.default.createElement(
+        TextBlock,
+        null,
+        _react2.default.createElement(
+          'h1',
+          { style: { textAlign: 'center' } },
+          this.props.data.title
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          this.props.data.paragraphs.map(function (text, index) {
+            return _react2.default.createElement(
+              Paragraph,
+              { key: index + '-text' },
+              text
+            );
+          })
+        ),
+        _react2.default.createElement(_GreenButton2.default, { text: this.props.data.buttonText })
+      );
+      return _react2.default.createElement(
+        Wrapper,
+        null,
+        ' ',
+        left,
+        right
+      );
+    }
+  }, {
+    key: '__reactstandin__regenerateByEval',
+    value: function __reactstandin__regenerateByEval(key, code) {
+      this[key] = eval(code);
+    }
+  }]);
+
+  return PictureLeftTextRight;
+}(_react2.default.Component);
+
+var _default = PictureLeftTextRight;
+exports.default = _default;
+;
+
+(function () {
+  var reactHotLoader = require('react-hot-loader').default;
+
+  var leaveModule = require('react-hot-loader').leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(wrapperStyle, 'wrapperStyle', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureText.jsx');
+  reactHotLoader.register(Wrapper, 'Wrapper', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureText.jsx');
+  reactHotLoader.register(PictureBlock, 'PictureBlock', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureText.jsx');
+  reactHotLoader.register(TextBlock, 'TextBlock', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureText.jsx');
+  reactHotLoader.register(Pic, 'Pic', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureText.jsx');
+  reactHotLoader.register(Paragraph, 'Paragraph', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureText.jsx');
+  reactHotLoader.register(PictureLeftTextRight, 'PictureLeftTextRight', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureText.jsx');
+  reactHotLoader.register(_default, 'default', 'C:/Users/Jason/Desktop/CCIv2/src/components/PictureText.jsx');
+  leaveModule(module);
+})();
+
+;
+},{"react-hot-loader":25,"react":8,"styled-components":26,"./images.js":12,"./GreenButton.jsx":46}],22:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _styledComponents = require('styled-components');
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _PictureText = require('./PictureText.jsx');
+
+var _PictureText2 = _interopRequireDefault(_PictureText);
+
+var _images = require('./images.js');
+
+var _images2 = _interopRequireDefault(_images);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(function () {
+  var enterModule = require('react-hot-loader').enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+var data = {
+  title: 'The Cambridge guarantee',
+  paragraphs: ['CCI English is authorized by Cambridge English, a division of Cambridge University in England, as the only Cambridge Teaching Qualifications Center in Israel. We take our mission as experts in teaching and learning English seriously and make it our priority to have quality programs for English learners and teachers.', 'Cambridge English inspects our school multiple times every year and continues to assess us as experts in the field of English language teaching. Choose CCI English to have the highest quality English teaching, verified by Cambridge University.'],
+  buttonText: 'Contact us about classes',
+  buttonLink: 'connect',
+  // Text is 'right'
+  format: ['right', 'left'],
+  //format: ['left','right'],
+  background: '#f3f3f3'
+};
+
+var CambridgeGuarantee = function CambridgeGuarantee() {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(_PictureText2.default, { picture: _images2.default.cambridgeUni, data: data })
+  );
+};
+
+var _default = CambridgeGuarantee;
+exports.default = _default;
+;
+
+(function () {
+  var reactHotLoader = require('react-hot-loader').default;
+
+  var leaveModule = require('react-hot-loader').leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(data, 'data', 'C:/Users/Jason/Desktop/CCIv2/src/components/CambridgeGaurantee.jsx');
+  reactHotLoader.register(CambridgeGuarantee, 'CambridgeGuarantee', 'C:/Users/Jason/Desktop/CCIv2/src/components/CambridgeGaurantee.jsx');
+  reactHotLoader.register(_default, 'default', 'C:/Users/Jason/Desktop/CCIv2/src/components/CambridgeGaurantee.jsx');
+  leaveModule(module);
+})();
+
+;
+},{"react-hot-loader":25,"react":8,"styled-components":26,"./PictureText.jsx":45,"./images.js":12}],23:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _templateObject = _taggedTemplateLiteral(['\n\n@media (max-width: 599px) {\n    display: grid;\n    grid-gap: 5px;\n    grid-template-areas: \n      "cam-left"\n      "cam-right"       \n}\n/*for-tablet-portrait-up*/\n\n@media (min-width: 600px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-areas: \n      "cam-left" \n      "cam-right"\n}\n/*for-tablet-landscape-up*/\n\n@media (min-width: 900px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-columns: 50% 50%\n}\n/*for-desktop-up*/\n\n@media (min-width: 1200px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-areas: \n      "cam-left cam-right"\n}\n/*for-big-desktop-up*/\n\n@media (min-width: 1800px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-areas: \n      "cam-left cam-right"\n}\n  margin-top: 10px;\n  border-radius: 1p;\n  padding: 20px;\n  background:#f3f3f3;\n'], ['\n\n@media (max-width: 599px) {\n    display: grid;\n    grid-gap: 5px;\n    grid-template-areas: \n      "cam-left"\n      "cam-right"       \n}\n/*for-tablet-portrait-up*/\n\n@media (min-width: 600px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-areas: \n      "cam-left" \n      "cam-right"\n}\n/*for-tablet-landscape-up*/\n\n@media (min-width: 900px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-columns: 50% 50%\n}\n/*for-desktop-up*/\n\n@media (min-width: 1200px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-areas: \n      "cam-left cam-right"\n}\n/*for-big-desktop-up*/\n\n@media (min-width: 1800px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-areas: \n      "cam-left cam-right"\n}\n  margin-top: 10px;\n  border-radius: 1p;\n  padding: 20px;\n  background:#f3f3f3;\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n\n  align-self : center;\n  margin-top: 10px;\n  grid-gap: 5px;\n  grid-auto-columns: auto;\n  grid-area: cam-left;\n'], ['\n\n  align-self : center;\n  margin-top: 10px;\n  grid-gap: 5px;\n  grid-auto-columns: auto;\n  grid-area: cam-left;\n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n  padding: 10px;\n  grid-auto-columns: auto;\n  grid-area: cam-right;\n'], ['\n  padding: 10px;\n  grid-auto-columns: auto;\n  grid-area: cam-right;\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n  background: #a2c534;\n  padding: 10px;\n  text-align: center;\n  width: 200px;\n  margin: 0 auto;\n  box-shadow: 1px 1px 1px #999;\n  &:hover {\n  color:white;\n  background: #b7d753;\n  cursor: pointer;\n}\n'], ['\n  background: #a2c534;\n  padding: 10px;\n  text-align: center;\n  width: 200px;\n  margin: 0 auto;\n  box-shadow: 1px 1px 1px #999;\n  &:hover {\n  color:white;\n  background: #b7d753;\n  cursor: pointer;\n}\n']),
+    _templateObject5 = _taggedTemplateLiteral(['\n  padding-left: 10px;\n  padding-right: 10px;\n  font-family: \'Rubik\', sans-serif;\n  color: #717070;\n  font-weight: lighter !important;\n  letter-spacing: 1px;\n  line-height: 27px;\n'], ['\n  padding-left: 10px;\n  padding-right: 10px;\n  font-family: \'Rubik\', sans-serif;\n  color: #717070;\n  font-weight: lighter !important;\n  letter-spacing: 1px;\n  line-height: 27px;\n']),
+    _templateObject6 = _taggedTemplateLiteral(['\n  width: 100%;\n'], ['\n  width: 100%;\n']),
+    _templateObject7 = _taggedTemplateLiteral(['\n  width: 100px;\n  margin: 2px;\n'], ['\n  width: 100px;\n  margin: 2px;\n']);
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _styledComponents = require('styled-components');
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _images = require('./images');
+
+var _images2 = _interopRequireDefault(_images);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(function () {
+  var enterModule = require('react-hot-loader').enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var gallary1 = _images2.default.gallary1;
+var gallary2 = _images2.default.gallary2;
+var gallary3 = _images2.default.gallary3;
+var gallary4 = _images2.default.gallary4;
+var gallary5 = _images2.default.gallary5;
+
+var Wrapper = _styledComponents2.default.div(_templateObject);
+
+var ComfortBlurb = _styledComponents2.default.div(_templateObject2);
+
+var ComfortGallary = _styledComponents2.default.div(_templateObject3);
+
+var ContactUsAboutClassesBtn = _styledComponents2.default.div(_templateObject4);
+
+var Paragraph = _styledComponents2.default.p(_templateObject5);
+
+var GallaryMainPic = (0, _styledComponents2.default)('img')(_templateObject6);
+
+var GallaryMini = (0, _styledComponents2.default)('img')(_templateObject7);
+
+var QualityAndComfort = function (_React$Component) {
+  _inherits(QualityAndComfort, _React$Component);
+
+  function QualityAndComfort(props) {
+    _classCallCheck(this, QualityAndComfort);
+
+    var _this = _possibleConstructorReturn(this, (QualityAndComfort.__proto__ || Object.getPrototypeOf(QualityAndComfort)).call(this, props));
+
+    _this.state = {
+      pictures: [gallary1, gallary2, gallary3, gallary4, gallary5],
+      mainPic: gallary5
+    };
+    _this.photoPicker = _this.photopicker.bind(_this);
+    return _this;
+  }
+
+  _createClass(QualityAndComfort, [{
+    key: 'photopicker',
+    value: function photopicker(e) {
+      console.log(e);
+      var gallary = this.state.pictures;
+      var pic = gallary[e];
+      this.setState({ mainPic: pic });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        Wrapper,
+        null,
+        _react2.default.createElement(
+          ComfortBlurb,
+          null,
+          _react2.default.createElement(
+            'h1',
+            { style: { textAlign: 'center' }
+            },
+            'Quality and comfort'
+          ),
+          _react2.default.createElement(
+            'div',
+            null,
+            _react2.default.createElement(
+              Paragraph,
+              null,
+              'At CCI English, we speak with every new student before they enroll in classes.'
+            ),
+            _react2.default.createElement(
+              Paragraph,
+              null,
+              'Our first meeting will include an evaluation of your English level and a short interview about your English learning. We interview students and listen to them talk about their life, work, interests and goals because each student has a different situation and different needs. These meetings are always free of charge because each student deserves to know about their school and classes before they sign up.'
+            ),
+            _react2.default.createElement(
+              Paragraph,
+              null,
+              'All of our advisors are well educated, well traveled and interested in helping students reach their educational and life goals. Using the information from your interview, our advisors can recommend the best classes to suit your needs, personality and budget.'
+            )
+          ),
+          _react2.default.createElement(
+            ContactUsAboutClassesBtn,
+            null,
+            'Contact us about classes'
+          )
+        ),
+        _react2.default.createElement(
+          ComfortGallary,
+          null,
+          _react2.default.createElement(GallaryMainPic, { src: this.state.mainPic, alt: 'cambridge University' }),
+          _react2.default.createElement(GallaryMini, { onClick: function onClick(e) {
+              return _this2.photopicker(0);
+            }, src: gallary1, alt: 'cambridge University' }),
+          _react2.default.createElement(GallaryMini, { onClick: function onClick(e) {
+              return _this2.photopicker(1);
+            }, src: gallary2, alt: 'cambridge University' }),
+          _react2.default.createElement(GallaryMini, { onClick: function onClick(e) {
+              return _this2.photopicker(2);
+            }, src: gallary3, alt: 'cambridge University' }),
+          _react2.default.createElement(GallaryMini, { onClick: function onClick(e) {
+              return _this2.photopicker(3);
+            }, src: gallary4, alt: 'cambridge University' }),
+          _react2.default.createElement(GallaryMini, { onClick: function onClick(e) {
+              return _this2.photopicker(4);
+            }, src: gallary5, alt: 'cambridge University' })
+        )
+      );
+    }
+  }, {
+    key: '__reactstandin__regenerateByEval',
+    value: function __reactstandin__regenerateByEval(key, code) {
+      this[key] = eval(code);
+    }
+  }]);
+
+  return QualityAndComfort;
+}(_react2.default.Component);
+
+var _default = QualityAndComfort;
+exports.default = _default;
+;
+
+(function () {
+  var reactHotLoader = require('react-hot-loader').default;
+
+  var leaveModule = require('react-hot-loader').leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(gallary1, 'gallary1', 'C:/Users/Jason/Desktop/CCIv2/src/components/QualityAndComfort.jsx');
+  reactHotLoader.register(gallary2, 'gallary2', 'C:/Users/Jason/Desktop/CCIv2/src/components/QualityAndComfort.jsx');
+  reactHotLoader.register(gallary3, 'gallary3', 'C:/Users/Jason/Desktop/CCIv2/src/components/QualityAndComfort.jsx');
+  reactHotLoader.register(gallary4, 'gallary4', 'C:/Users/Jason/Desktop/CCIv2/src/components/QualityAndComfort.jsx');
+  reactHotLoader.register(gallary5, 'gallary5', 'C:/Users/Jason/Desktop/CCIv2/src/components/QualityAndComfort.jsx');
+  reactHotLoader.register(Wrapper, 'Wrapper', 'C:/Users/Jason/Desktop/CCIv2/src/components/QualityAndComfort.jsx');
+  reactHotLoader.register(ComfortBlurb, 'ComfortBlurb', 'C:/Users/Jason/Desktop/CCIv2/src/components/QualityAndComfort.jsx');
+  reactHotLoader.register(ComfortGallary, 'ComfortGallary', 'C:/Users/Jason/Desktop/CCIv2/src/components/QualityAndComfort.jsx');
+  reactHotLoader.register(ContactUsAboutClassesBtn, 'ContactUsAboutClassesBtn', 'C:/Users/Jason/Desktop/CCIv2/src/components/QualityAndComfort.jsx');
+  reactHotLoader.register(Paragraph, 'Paragraph', 'C:/Users/Jason/Desktop/CCIv2/src/components/QualityAndComfort.jsx');
+  reactHotLoader.register(GallaryMainPic, 'GallaryMainPic', 'C:/Users/Jason/Desktop/CCIv2/src/components/QualityAndComfort.jsx');
+  reactHotLoader.register(GallaryMini, 'GallaryMini', 'C:/Users/Jason/Desktop/CCIv2/src/components/QualityAndComfort.jsx');
+  reactHotLoader.register(QualityAndComfort, 'QualityAndComfort', 'C:/Users/Jason/Desktop/CCIv2/src/components/QualityAndComfort.jsx');
+  reactHotLoader.register(_default, 'default', 'C:/Users/Jason/Desktop/CCIv2/src/components/QualityAndComfort.jsx');
+  leaveModule(module);
+})();
+
+;
+},{"react-hot-loader":25,"react":8,"styled-components":26,"./images":12}],24:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _templateObject = _taggedTemplateLiteral(['\n  display: grid;\n  max-width: 800px;\n  margin: 0 auto;\n  align-item: center;\n\n@media (max-width: 599px) {\n    display: grid;\n    grid-gap: 5px;\n    grid-template-areas: \n      "our-team-title"\n      "employee-details"       \n}\n/*for-tablet-portrait-up*/\n\n@media (min-width: 600px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-areas: \n      "our-team-title"\n      "employee-details" \n}\n/*for-tablet-landscape-up*/\n\n@media (min-width: 900px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-areas: \n      "our-team-title"\n      "employee-details" \n}\n/*for-desktop-up*/\n\n@media (min-width: 1200px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-areas: \n      "our-team-title"\n      "employee-details" \n}\n/*for-big-desktop-up*/\n\n@media (min-width: 1800px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-areas: \n      "our-team-title"\n      "employee-details" \n}\n\n'], ['\n  display: grid;\n  max-width: 800px;\n  margin: 0 auto;\n  align-item: center;\n\n@media (max-width: 599px) {\n    display: grid;\n    grid-gap: 5px;\n    grid-template-areas: \n      "our-team-title"\n      "employee-details"       \n}\n/*for-tablet-portrait-up*/\n\n@media (min-width: 600px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-areas: \n      "our-team-title"\n      "employee-details" \n}\n/*for-tablet-landscape-up*/\n\n@media (min-width: 900px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-areas: \n      "our-team-title"\n      "employee-details" \n}\n/*for-desktop-up*/\n\n@media (min-width: 1200px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-areas: \n      "our-team-title"\n      "employee-details" \n}\n/*for-big-desktop-up*/\n\n@media (min-width: 1800px) {\n    display: grid;\n    grid-gap: 2px;\n    grid-template-areas: \n      "our-team-title"\n      "employee-details" \n}\n\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  grid-area: our-team-title;\n  font-family: \'Raleway\', sans-serif;\n  color: #50C8EB;\n  font-weight: bold;\n  text-align:center;\n'], ['\n  grid-area: our-team-title;\n  font-family: \'Raleway\', sans-serif;\n  color: #50C8EB;\n  font-weight: bold;\n  text-align:center;\n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n  grid-area: employee-details\n\n'], ['\n  grid-area: employee-details\n\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n@media (max-width: 599px) {\n\tgrid-template-rows: 25% 75%;\n}\n@media (min-width: 600px) {\n\tgrid-template-columns: 25% 75%;\n}\n@media (min-width: 900px) {}\n@media (min-width: 1200px) {}\n@media (min-width: 1800px) {}\n\n  display: grid;\n  margin: 0 auto;\n  grid-gap: 10px;\n  padding: 20px; \n'], ['\n@media (max-width: 599px) {\n\tgrid-template-rows: 25% 75%;\n}\n@media (min-width: 600px) {\n\tgrid-template-columns: 25% 75%;\n}\n@media (min-width: 900px) {}\n@media (min-width: 1200px) {}\n@media (min-width: 1800px) {}\n\n  display: grid;\n  margin: 0 auto;\n  grid-gap: 10px;\n  padding: 20px; \n']),
+    _templateObject5 = _taggedTemplateLiteral(['\n  color: grey;\n'], ['\n  color: grey;\n']),
+    _templateObject6 = _taggedTemplateLiteral(['\n  font-size: 12px;\n  line-height: 0px;\n\n'], ['\n  font-size: 12px;\n  line-height: 0px;\n\n']),
+    _templateObject7 = _taggedTemplateLiteral(['\n  font-style: italic;\n  color: grey;\n'], ['\n  font-style: italic;\n  color: grey;\n']),
+    _templateObject8 = _taggedTemplateLiteral(['\n  width: 160px;\n'], ['\n  width: 160px;\n']),
+    _templateObject9 = _taggedTemplateLiteral(['\n  font-family: \'Rubik\', sans-serif;\n  color: #717070;\n  font-weight: lighter !important;\n  letter-spacing: 1px;\n  line-height: 27px;\n'], ['\n  font-family: \'Rubik\', sans-serif;\n  color: #717070;\n  font-weight: lighter !important;\n  letter-spacing: 1px;\n  line-height: 27px;\n']);
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _styledComponents = require('styled-components');
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _images = require('./images');
+
+var _images2 = _interopRequireDefault(_images);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(function () {
+  var enterModule = require('react-hot-loader').enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var OurTeamDetails = _styledComponents2.default.div(_templateObject);
+
+var OurTeamTitle = _styledComponents2.default.div(_templateObject2);
+
+var EmployeeDetails = _styledComponents2.default.div(_templateObject3);
+
+var EmployeeDetail = _styledComponents2.default.div(_templateObject4);
+
+var EmployeeName = _styledComponents2.default.div(_templateObject5);
+var EmployeeBlurb = _styledComponents2.default.div(_templateObject6);
+var EmployeeSmallDetail = _styledComponents2.default.div(_templateObject7);
+
+var EmployeePic = (0, _styledComponents2.default)('img')(_templateObject8);
+
+var Paragraph = _styledComponents2.default.p(_templateObject9);
+
+var OurTeam = function OurTeam() {
+  return _react2.default.createElement(
+    OurTeamDetails,
+    null,
+    _react2.default.createElement(
+      OurTeamTitle,
+      null,
+      _react2.default.createElement(
+        'h1',
+        null,
+        'Our Team'
+      )
+    ),
+    _react2.default.createElement(
+      EmployeeDetails,
+      null,
+      _react2.default.createElement(
+        EmployeeDetail,
+        null,
+        _react2.default.createElement(EmployeePic, { className: 'staff-pic', src: _images2.default.ourSchool1, alt: 'random picture' }),
+        _react2.default.createElement(
+          EmployeeBlurb,
+          null,
+          _react2.default.createElement(
+            EmployeeName,
+            null,
+            _react2.default.createElement(
+              'h2',
+              null,
+              'Amir Landa'
+            )
+          ),
+          _react2.default.createElement(
+            Paragraph,
+            null,
+            'As a dual citizen of the US and Israel, Amir loves spending time in both countries. He completed his CELTA in 2007 in New York and immediately moved to Vietnam to teach English. Since then, he has earned his Young Learner certificate and Cambridge Delta diploma. Amir has a wide variety of English Language Teaching experiences, including educational management and training teachers in modern methodology for both adult and young learner classes. He is a Cambridge CELTA course tutor and has delivered courses all over the world.'
+          ),
+          _react2.default.createElement(
+            EmployeeSmallDetail,
+            null,
+            'Delta-qualified teacher, trainer and manager'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        EmployeeDetail,
+        null,
+        _react2.default.createElement(EmployeePic, { className: 'staff-pic', src: _images2.default.ourSchool1, alt: 'random picture' }),
+        _react2.default.createElement(
+          EmployeeBlurb,
+          null,
+          _react2.default.createElement(
+            EmployeeName,
+            null,
+            _react2.default.createElement(
+              'h2',
+              null,
+              'Amir Landa'
+            )
+          ),
+          _react2.default.createElement(
+            Paragraph,
+            null,
+            'As a dual citizen of the US and Israel, Amir loves spending time in both countries.  He completed his CELTA in 2007 in New York and immediately moved to Vietnam to teach English. Since then, he has earned his Young Learner certificate and Cambridge Delta diploma. Amir has a wide variety of English Language Teaching experiences, including educational management and training teachers in modern methodology for both adult and young learner classes.  He is a Cambridge CELTA course tutor and has delivered courses all over the world.'
+          ),
+          _react2.default.createElement(
+            EmployeeSmallDetail,
+            null,
+            'Delta-qualified teacher, trainer and manager'
+          )
+        )
+      )
+    )
+  );
+};
+
+var _default = OurTeam;
+exports.default = _default;
+;
+
+(function () {
+  var reactHotLoader = require('react-hot-loader').default;
+
+  var leaveModule = require('react-hot-loader').leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(OurTeamDetails, 'OurTeamDetails', 'C:/Users/Jason/Desktop/CCIv2/src/components/OurTeam.jsx');
+  reactHotLoader.register(OurTeamTitle, 'OurTeamTitle', 'C:/Users/Jason/Desktop/CCIv2/src/components/OurTeam.jsx');
+  reactHotLoader.register(EmployeeDetails, 'EmployeeDetails', 'C:/Users/Jason/Desktop/CCIv2/src/components/OurTeam.jsx');
+  reactHotLoader.register(EmployeeDetail, 'EmployeeDetail', 'C:/Users/Jason/Desktop/CCIv2/src/components/OurTeam.jsx');
+  reactHotLoader.register(EmployeeName, 'EmployeeName', 'C:/Users/Jason/Desktop/CCIv2/src/components/OurTeam.jsx');
+  reactHotLoader.register(EmployeeBlurb, 'EmployeeBlurb', 'C:/Users/Jason/Desktop/CCIv2/src/components/OurTeam.jsx');
+  reactHotLoader.register(EmployeeSmallDetail, 'EmployeeSmallDetail', 'C:/Users/Jason/Desktop/CCIv2/src/components/OurTeam.jsx');
+  reactHotLoader.register(EmployeePic, 'EmployeePic', 'C:/Users/Jason/Desktop/CCIv2/src/components/OurTeam.jsx');
+  reactHotLoader.register(Paragraph, 'Paragraph', 'C:/Users/Jason/Desktop/CCIv2/src/components/OurTeam.jsx');
+  reactHotLoader.register(OurTeam, 'OurTeam', 'C:/Users/Jason/Desktop/CCIv2/src/components/OurTeam.jsx');
+  reactHotLoader.register(_default, 'default', 'C:/Users/Jason/Desktop/CCIv2/src/components/OurTeam.jsx');
+  leaveModule(module);
+})();
+
+;
+},{"react-hot-loader":25,"react":8,"styled-components":26,"./images":12}],13:[function(require,module,exports) {
+'use strict';
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _styledComponents = require('styled-components');
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _PictureGallaryText = require('./PictureGallaryText.jsx');
+
+var _PictureGallaryText2 = _interopRequireDefault(_PictureGallaryText);
+
+var _CambridgeGaurantee = require('./CambridgeGaurantee.jsx');
+
+var _CambridgeGaurantee2 = _interopRequireDefault(_CambridgeGaurantee);
+
+var _QualityAndComfort = require('./QualityAndComfort.jsx');
+
+var _QualityAndComfort2 = _interopRequireDefault(_QualityAndComfort);
+
+var _images = require('./images.js');
+
+var _images2 = _interopRequireDefault(_images);
+
+var _OurTeam = require('./OurTeam.jsx');
+
+var _OurTeam2 = _interopRequireDefault(_OurTeam);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(function () {
+  var enterModule = require('react-hot-loader').enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+var pictures = [_images2.default.ourSchool1, _images2.default.ourSchool2, _images2.default.ourSchool3, _images2.default.ourSchool4, _images2.default.ourSchool5, _images2.default.ourSchool6, _images2.default.ourSchool7, _images2.default.ourSchool8, _images2.default.ourSchool9];
+
+var data = {
+  title: 'Our Story',
+  paragraphs: ['CCI\'s story, like many others, began while socializing at a local bar. One night Amir, Christina & Svitlana went out to celebrate a friend\'s birthday in New York City. The three soon found that they shared a number of common interests, including English education and life in Israel. This discovery led to a light hearted conversation about opening their own school in Israel one day.', 'They spent years traveling and working together around the world including Ukraine, Sri Lanka, and Ireland before they decided that opening their own school was something they had the knowledge, experience and passion to do.', 'Now, all three friends are living their dream of running an English school in Tel Aviv, which is the  primary metropolitan center of the country. They\'re thrilled to be running a school modeled after their own learning philosophy - that only by practicing the language can students increase their confidence and ability to interact outside of the classroom.', 'They love working with intelligent, motivated, fun-loving students in Israel and abroad to help them achieve their goals for English language learning.'],
+  buttonText: 'Meet our team',
+  buttonLink: 'connect',
+  caption: 'CCI English founders Svitlana Bulkina, Amir Landa & Christina Kaku - Photos by Ifaa Amit',
+  // Text is 'right'
+  //format: ['right','left'],
+  format: ['left', 'right'],
+  background: '#f3f3f3',
+  pictures: pictures
+};
+
+var Home = function Home() {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(_PictureGallaryText2.default, { data: data }),
+    _react2.default.createElement(_OurTeam2.default, { style: { margin: '0 auto' } }),
+    _react2.default.createElement(_CambridgeGaurantee2.default, null),
+    _react2.default.createElement(_QualityAndComfort2.default, null)
+  );
+};
+
+module.exports = Home;
+;
+
+(function () {
+  var reactHotLoader = require('react-hot-loader').default;
+
+  var leaveModule = require('react-hot-loader').leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(pictures, 'pictures', 'C:/Users/Jason/Desktop/CCIv2/src/components/OurSchool.jsx');
+  reactHotLoader.register(data, 'data', 'C:/Users/Jason/Desktop/CCIv2/src/components/OurSchool.jsx');
+  reactHotLoader.register(Home, 'Home', 'C:/Users/Jason/Desktop/CCIv2/src/components/OurSchool.jsx');
+  leaveModule(module);
+})();
+
+;
+},{"react-hot-loader":25,"react":8,"styled-components":26,"./PictureGallaryText.jsx":21,"./CambridgeGaurantee.jsx":22,"./QualityAndComfort.jsx":23,"./images.js":12,"./OurTeam.jsx":24}],100:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -28902,7 +29905,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],9:[function(require,module,exports) {
+},{}],44:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -28933,13 +29936,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":14}],4:[function(require,module,exports) {
+},{"./bundle-url":100}],14:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":9}],3:[function(require,module,exports) {
+},{"_css_loader":44}],6:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -28964,17 +29967,17 @@ var _reactRouterDom = require('react-router-dom');
 
 var _reactHotLoader = require('react-hot-loader');
 
-var _ccilogo = require('../components/assets/ccilogo.png');
+var _images = require('./images.js');
 
-var _ccilogo2 = _interopRequireDefault(_ccilogo);
-
-var _cambridgeLogo = require('../components/assets/cambridgeLogo.png');
-
-var _cambridgeLogo2 = _interopRequireDefault(_cambridgeLogo);
+var _images2 = _interopRequireDefault(_images);
 
 var _styledComponents = require('styled-components');
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _OurSchool = require('./OurSchool.jsx');
+
+var _OurSchool2 = _interopRequireDefault(_OurSchool);
 
 require('./styles.css');
 
@@ -28993,18 +29996,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
-var Home = function Home() {
-  return _react2.default.createElement(
-    'div',
-    null,
-    _react2.default.createElement(
-      'h2',
-      null,
-      'Home'
-    )
-  );
-};
 
 var About = function About() {
   return _react2.default.createElement(
@@ -29111,13 +30102,12 @@ var App = function (_React$Component) {
   _createClass(App, [{
     key: 'render',
     value: function render() {
-
       return _react2.default.createElement(
         _reactRouterDom.BrowserRouter,
         null,
         _react2.default.createElement(
           'div',
-          null,
+          { className: 'wrapper' },
           _react2.default.createElement(
             Menu,
             null,
@@ -29127,7 +30117,7 @@ var App = function (_React$Component) {
               _react2.default.createElement(
                 _reactRouterDom.Link,
                 { to: '/' },
-                _react2.default.createElement(StyledLogo, { src: _ccilogo2.default, alt: 'Logo' })
+                _react2.default.createElement(StyledLogo, { src: _images2.default.ccilogo, alt: 'Logo' })
               )
             ),
             _react2.default.createElement(
@@ -29168,8 +30158,7 @@ var App = function (_React$Component) {
                   { to: '/contactcci' },
                   'Contact'
                 )
-              ),
-              _react2.default.createElement('hr', null)
+              )
             ),
             _react2.default.createElement(
               MenuItemLogoRight,
@@ -29177,13 +30166,13 @@ var App = function (_React$Component) {
               _react2.default.createElement(
                 ExternalLink,
                 { href: '//www.cambridgeenglish.org/', target: '_blank' },
-                _react2.default.createElement('img', { style: { float: 'right', padding: '10px' }, src: _cambridgeLogo2.default, alt: 'Logo' })
+                _react2.default.createElement('img', { style: { float: 'right', padding: '10px' }, src: _images2.default.cambridgeLogo, alt: 'Logo' })
               )
             )
           ),
-          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: Home }),
           _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: About }),
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/topics', component: Topics })
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/topics', component: Topics }),
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/our-school', component: _OurSchool2.default })
         )
       );
     }
@@ -29211,25 +30200,24 @@ exports.default = _default;
     return;
   }
 
-  reactHotLoader.register(Home, 'Home', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.js');
-  reactHotLoader.register(About, 'About', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.js');
-  reactHotLoader.register(Topic, 'Topic', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.js');
-  reactHotLoader.register(Topics, 'Topics', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.js');
-  reactHotLoader.register(Menu, 'Menu', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.js');
-  reactHotLoader.register(MenuButtons, 'MenuButtons', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.js');
-  reactHotLoader.register(MenuItem, 'MenuItem', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.js');
-  reactHotLoader.register(StyledLink, 'StyledLink', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.js');
-  reactHotLoader.register(ExternalLink, 'ExternalLink', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.js');
-  reactHotLoader.register(MenuItemLogoLeft, 'MenuItemLogoLeft', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.js');
-  reactHotLoader.register(MenuItemLogoRight, 'MenuItemLogoRight', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.js');
-  reactHotLoader.register(StyledLogo, 'StyledLogo', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.js');
-  reactHotLoader.register(App, 'App', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.js');
-  reactHotLoader.register(_default, 'default', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.js');
+  reactHotLoader.register(About, 'About', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.jsx');
+  reactHotLoader.register(Topic, 'Topic', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.jsx');
+  reactHotLoader.register(Topics, 'Topics', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.jsx');
+  reactHotLoader.register(Menu, 'Menu', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.jsx');
+  reactHotLoader.register(MenuButtons, 'MenuButtons', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.jsx');
+  reactHotLoader.register(MenuItem, 'MenuItem', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.jsx');
+  reactHotLoader.register(StyledLink, 'StyledLink', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.jsx');
+  reactHotLoader.register(ExternalLink, 'ExternalLink', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.jsx');
+  reactHotLoader.register(MenuItemLogoLeft, 'MenuItemLogoLeft', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.jsx');
+  reactHotLoader.register(MenuItemLogoRight, 'MenuItemLogoRight', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.jsx');
+  reactHotLoader.register(StyledLogo, 'StyledLogo', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.jsx');
+  reactHotLoader.register(App, 'App', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.jsx');
+  reactHotLoader.register(_default, 'default', 'C:/Users/Jason/Desktop/CCIv2/src/components/App.jsx');
   leaveModule(module);
 })();
 
 ;
-},{"react-hot-loader":15,"react":7,"react-router-dom":16,"../components/assets/ccilogo.png":5,"../components/assets/cambridgeLogo.png":6,"styled-components":17,"./styles.css":4}],2:[function(require,module,exports) {
+},{"react-hot-loader":25,"react":8,"react-router-dom":27,"./images.js":12,"styled-components":26,"./OurSchool.jsx":13,"./styles.css":14}],4:[function(require,module,exports) {
 'use strict';
 
 var _react = require('react');
@@ -29240,14 +30228,14 @@ var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _App = require('./src/components/App.js');
+var _App = require('./src/components/App.jsx');
 
 var _App2 = _interopRequireDefault(_App);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('root'));
-},{"react":7,"react-dom":8,"./src/components/App.js":3}],96:[function(require,module,exports) {
+},{"react":8,"react-dom":9,"./src/components/App.jsx":6}],109:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -29269,7 +30257,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '53468' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '49613' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -29370,5 +30358,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[96,2])
+},{}]},{},[109,4])
 //# sourceMappingURL=/dist/CCIv2.map
