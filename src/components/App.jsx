@@ -12,51 +12,9 @@ import styled from 'styled-components'
 import OurSchool from './OurSchool.jsx'
 import Contact from './Contact.jsx'
 import EnglishClasses from './EnglishClasses.jsx'
+import Home from './Home.jsx'
 
 import './styles.css';
-
-
-
-
-const About = () => (
-  <div>
-    <h2>About</h2>
-  </div>
-)
-
-const Topic = ({ match }) => (
-  <div>
-    <h3>{match.params.topicId}</h3>
-  </div>
-)
-
-const Topics = ({ match }) => (
-  <div>
-    <h2>Topics</h2>
-    <ul>
-      <li>
-        <Link to={`${match.url}/rendering`}>
-          Rendering with React
-        </Link>
-      </li>
-      <li>
-        <Link to={`${match.url}/components`}>
-          Components
-        </Link>
-      </li>
-      <li>
-        <Link to={`${match.url}/props-v-state`}>
-          Props v. State
-        </Link>
-      </li>
-    </ul>
-
-    <Route path={`${match.path}/:topicId`} component={Topic}/>
-    <Route exact path={match.path} render={() => (
-      <h3>Please select a topic.</h3>
-    )}/>
-  </div>
-)
 
 
 const Menu = styled.div` 
@@ -174,12 +132,11 @@ class App extends React.Component {
 
   render(){
   	return(
-  	
 		<Router>
 		<div className="wrapper">
 		<Menu>
   		<MenuItemLogoLeft>  
-  		  <Link to="/"><StyledLogo src={images.ccilogo} alt="Logo"/></Link>
+  		  <Link to="/home"><StyledLogo src={images.ccilogo} alt="Logo"/></Link>
   		</MenuItemLogoLeft>
   		<MenuButtons>
     		<MenuItem>  
@@ -189,7 +146,7 @@ class App extends React.Component {
     		  <StyledLink to="/english-classes">English classes</StyledLink>
     		</MenuItem>  
     		<MenuItem>
-    		  <StyledLink to="/english-classes">CELTA</StyledLink>
+    		  <StyledLink to="https://www.celta.ccienglish.com/" target="_blank">CELTA</StyledLink>
     		</MenuItem>
     		<MenuItem>    
     		  <StyledLink to="/contactcci">Contact</StyledLink>
@@ -200,16 +157,13 @@ class App extends React.Component {
     		  <img style={{float:'right',padding:'10px'}} src={images.cambridgeLogo} alt="Logo"/>
     		</ExternalLink>
   		</MenuItemLogoRight>
-		</Menu>	
-	{/*	<Route exact path="/" component={Home}/>*/}
-		<Route path="/about" component={About}/>
-		<Route path="/topics" component={Topics}/>
+		</Menu>			
     <Route path="/our-school" component={OurSchool}/>
     <Route path="/english-classes" component={EnglishClasses}/>
     <Route path="/contactcci" component={Contact}/>
+    <Route path="/home" component={Home}/>
 		</div>	    
 		</Router>
-
   		)
   }
   

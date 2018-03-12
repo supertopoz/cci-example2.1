@@ -20,15 +20,6 @@ import IndividualLessons from './IndividualLessons.jsx'
 import StudyAbroad from './StudyAbroad.jsx'
 import ClassesHome from './ClassesHome.jsx'
 
-
-
-
-
-
-
-
-
-
 const Menu = styled.div`
    
    display: grid;
