@@ -1,0 +1,44 @@
+
+
+img{
+ width: 150px;	
+}
+
+p {
+  font-family: 'Rubik', sans-serif;
+  color: #717070;
+  font-weight: lighter !important;
+  letter-spacing: 1px;
+  line-height: 27px;
+}
+
+label {
+  font-family: 'Rubik', sans-serif;
+  color: #717070;
+  font-weight: lighter !important;
+  letter-spacing: 1px;
+  line-height: 27px;
+}
+
+.caption {
+  color: #50C8EB;
+  letter-spacing: 0px;
+  line-height: none;
+  font-size: 10px;
+}
+
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  color: #50C8EB;
+  font-size: 45px;
+
+}
+
+.staff-pic {
+	margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+}
