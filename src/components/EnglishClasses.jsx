@@ -25,11 +25,10 @@ const Menu = styled.div`
    
    display: grid;
    padding: 10px;
-   margin: 0 auto;
    align-content: space-between;
    justify-content: space-around;
    margin-top: 10px;
-   grid-gap: 10px;
+   grid-gap:5px;
    
    background: #e0dbdb;
    color: white;
@@ -43,7 +42,7 @@ const MenuItem = styled.div`
      background:white;
      border-radius: 2px;
      text-align: center;
-     font-family: 'Rubik',sans-serif;
+
      box-shadow: 1px 1px 1px 0px #9c9c9c;
      border-bottom: 1px #e0dbdb solid;
      &:hover {
@@ -53,7 +52,7 @@ const MenuItem = styled.div`
        cursor: pointer;
      }
      @media (max-width: 599px) {
-      font-size: 0.6em;
+      font-size: 1em;
      }
 `;
 
