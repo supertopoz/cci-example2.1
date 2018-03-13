@@ -98,7 +98,8 @@ const EmployeeSmallDetail = styled.div`
 `;
 
 const EmployeePic = styled('img')`
-  width: 160px;
+  width: 150px;
+  margin: 0 auto;
 `;
 
 const Paragraph = styled.p`

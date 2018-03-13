@@ -39,14 +39,21 @@ const Menu = styled.div`
 
 const MenuItem = styled.div`
      padding: 2px;
-     color: black;
+     color: grey;
+     background:white;
+     border-radius: 2px;
      text-align: center;
-     border-bottom: 2px #e0dbdb solid;
+     font-family: 'Rubik',sans-serif;
+     box-shadow: 1px 1px 1px 0px #9c9c9c;
+     border-bottom: 1px #e0dbdb solid;
      &:hover {
-      border-bottom: 2px rgb(80, 200, 235) solid;
+      border-bottom: 1px rgb(80, 200, 235) solid;
       transition: 0.5s; /* delays for 1 second */
       -webkit-transition: 0.5s; /* for Safari & Chrome */	
        cursor: pointer;
+     }
+     @media (max-width: 599px) {
+      font-size: 0.6em;
      }
 `;
 

@@ -63,30 +63,39 @@ const Menu = styled.div`
 const MenuButtons = styled.div`
     grid-area: nav;
     display: grid;
-    align-items: center;
+    padding:5px; 
+    grid-gap: 5px;   
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
 `;
 
 const MenuItem = styled.div`
-    font-size: 20px;
+    display: grid;
+    font-size: 15px;
+    font-family: 'Rubik',sans-serif;
     text-decoration: none;
     text-align: center;
+    background-color: white;
+    border-radius:2px;
+    align-items: center;
+    box-shadow: 1px 1px 1px #9c9c9c;
     /*for-phone-only*/
     @media (max-width: 599px) {
     font-size: 15px;
     }    
+      &:hover {
+      border-bottom: 1px rgb(80, 200, 235) solid;
+      transition: 0.5s; /* delays for 1 second */
+      -webkit-transition: 0.5s; /* for Safari & Chrome */
+      cursor: pointer;
+    }  
 `;
 
 const StyledLink = styled(Link)`
   color: grey;
   text-decoration: none;
-  &:hover {
-      border-bottom: 3px rgb(80, 200, 235) solid;
-      transition: 0.5s; /* delays for 1 second */
-      -webkit-transition: 0.5s; /* for Safari & Chrome */
-      cursor: pointer;
-    }  
+  
+
 `
 
 const ExternalLink = styled('a')`
