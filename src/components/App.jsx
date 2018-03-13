@@ -143,7 +143,7 @@ class App extends React.Component {
 		<div className="wrapper">
 		<Menu>
   		<MenuItemLogoLeft>  
-  		  <Link to="/home"><StyledLogo src={images.ccilogo} alt="Logo"/></Link>
+  		  <Link to="/"><StyledLogo src={images.ccilogo} alt="Logo"/></Link>
   		</MenuItemLogoLeft>
   		<MenuButtons>
     		<MenuItem>  
@@ -164,11 +164,13 @@ class App extends React.Component {
     		  <img style={{float:'right',padding:'10px', width:'150px'}} src={images.cambridgeLogo} alt="Logo"/>
     		</ExternalLink>
   		</MenuItemLogoRight>
-		</Menu>			
+		</Menu>	
+
     <Route path="/our-school" component={OurSchool}/>
     <Route path="/english-classes" component={EnglishClasses}/>
     <Route path="/contactcci" component={Contact}/>
     <Route path="/home" component={Home}/>
+    <Route exact path="/" component={Home}/>
 		</div>	    
 		</Router>
   		)
