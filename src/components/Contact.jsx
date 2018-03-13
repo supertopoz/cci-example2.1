@@ -61,7 +61,7 @@ let ContactFormBlock = styled.div`
 `;
 
 const InputItem = styled('input')`
-  width: 20rem;
+  width: 17rem;
   height: 2rem;
   padding-left:5px;
   border: 1px solid #50C8EB;
@@ -70,6 +70,9 @@ const InputItem = styled('input')`
 
 let TextBlock = styled.div`
   padding: 20px;
+   @media (max-width: 600px){
+    padding: 8px;
+   }
   grid-auto-columns: auto;
   grid-area: cam-left;
 
@@ -80,6 +83,14 @@ const Pic = styled('img')`
 `;
 
 const Paragraph = styled.p`
+  padding-left: 10px;
+  padding-right: 10px;
+  @media (max-width: 600px){
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 0.8em;
+      line-height: 17px;
+  }
   font-family: 'Rubik', sans-serif;
   color: #717070;
   font-weight: lighter !important;

@@ -49,7 +49,11 @@ const wrapperStyle = `
       "cam-left cam-right"
 }
   margin-top: 10px;
-  padding: 20px;
+  @media (max-width: 600px){
+    padding-left: 2px;
+    padding-right: 2px;
+
+  }
 `;
 
 let Wrapper = styled.div`${wrapperStyle}`
@@ -63,6 +67,12 @@ const Pic = styled('img')`
 const Paragraph = styled.p`
   padding-left: 10px;
   padding-right: 10px;
+  @media (max-width: 600px){
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 0.8em;
+      line-height: 17px;
+  }
   font-family: 'Rubik', sans-serif;
   color: #717070;
   font-weight: lighter !important;

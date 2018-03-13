@@ -103,6 +103,14 @@ const EmployeePic = styled('img')`
 `;
 
 const Paragraph = styled.p`
+  padding-left: 10px;
+  padding-right: 10px;
+  @media (max-width: 600px){
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 0.8em;
+      line-height: 17px;
+  }
   font-family: 'Rubik', sans-serif;
   color: #717070;
   font-weight: lighter !important;
